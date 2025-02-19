@@ -11,7 +11,7 @@ public class AdjMatrix_dfs1 {
 	static boolean visit[];  //노드 개수만큼만 만들기
 	static int N;
 	public static void main(String[] args) throws Exception {
-		System.setIn(new FileInputStream("src/graph/AdjMatrix.txt"));
+		System.setIn(new FileInputStream("src/graph_0219/AdjMatrix.txt"));
 		BufferedReader in =  new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(in.readLine());
 		for (int tc = 1; tc <=T; tc++) {
@@ -40,14 +40,21 @@ public class AdjMatrix_dfs1 {
 //		인자로 전달된 cur 노드가 stack에서 꺼내온 효과이므로
 
 //				방문처리하고
+		visit[cur] = true;
 		
 //		추출한 노드에 대한 처리
+		System.out.printf("%c -> ", cur + 'A');
 		
 //		현재 노드의 인접된 노드에 대한 방문 시도
-		
+		for (int ad = 0; ad < N; ad++) {
 //			방문한 적이 없고 		인접 되어 있다면
+			if(!visit[ad] && map[cur][ad]) {
+//				스택에 추가하기
+				DFS(ad);
+			}
+		}
+		
 			
-//			스택에 추가하기
 	}
 }
 

@@ -1,0 +1,74 @@
+package tree;
+
+import java.io.*;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+public class 트리순회_1991 {
+
+	static int N;
+	static char[] nodes;
+	
+	static class Node{
+		char word;
+		Node left;
+		Node right;
+		
+		public Node(char word, Node left, Node right) {
+			super();
+			this.word = word;
+			this.left = left;
+			this.right = right;
+		}
+
+		@Override
+		public String toString() {
+			return "Node [word=" + word + ", left=" + left + ", right=" + right + "]";
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) throws Exception {
+		
+		System.setIn(new FileInputStream("input.txt"));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		N = Integer.parseInt(br.readLine());
+		nodes = new char[N + 1];
+		
+		for (int i = 0; i < N; i++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			
+			char mid = st.nextToken().charAt(0);
+			char left = st.nextToken().charAt(0);
+			char right = st.nextToken().charAt(0);
+			
+			int index = mid - 'A' + 1;
+			
+			System.out.println(index);
+			System.out.println("mid = " + mid + " left = " + left + " right = " + right);
+		
+			
+			nodes[index] = mid;
+			nodes[index*2] = left;
+			nodes[index*2 + 1] = right;
+			
+			System.out.println(Arrays.toString(nodes));
+			
+		}
+
+	}
+	
+	static void inOrder(int current) {
+		
+		if(current < N) {
+			
+			inOrder(current * 2);
+			
+			System.out.print(nodes[current]);
+			
+			inOrder(current * 2 + 1);
+		}
+	}
+
+}
