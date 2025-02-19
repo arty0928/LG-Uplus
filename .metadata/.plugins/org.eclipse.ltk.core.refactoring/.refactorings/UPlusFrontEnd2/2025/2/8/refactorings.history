@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 elements to &apos;JavaSE/src&apos;&#x0D;&#x0A;- Original project: &apos;UPlusFrontEnd2&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSE/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     tree&#x0D;&#x0A;     graph" description="Copy folders" destination="=JavaSE/src" element1="lecture/02_Algo/강의자료/0219/tree" element2="lecture/02_Algo/강의자료/0219/graph" files="0" flags="589830" folders="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1739930761718" units="0" version="1.0"/>
+</session>
