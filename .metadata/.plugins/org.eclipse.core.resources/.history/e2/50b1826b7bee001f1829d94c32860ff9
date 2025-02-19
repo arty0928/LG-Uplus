@@ -1,0 +1,20 @@
+package tree;
+
+public class 트리순회_1991 {
+
+	static int lastIndex, SIZE;
+	
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	static void inOrder(int current) {
+		
+		if(current <= lastIndex) {
+			
+		}
+	}
+
+}

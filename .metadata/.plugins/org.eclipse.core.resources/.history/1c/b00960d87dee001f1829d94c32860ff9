@@ -1,0 +1,26 @@
+package tree;
+
+public class 트리순회_1991 {
+
+	static int lastIndex, SIZE;
+	static char[] nodes;
+	
+	public static void main(String[] args) {
+		
+		
+
+	}
+	
+	static void inOrder(int current) {
+		
+		if(current <= lastIndex) {
+			
+			inOrder(current * 2);
+			
+			System.out.print(nodes[current]);
+			
+			inOrder(current * 2 + 1);
+		}
+	}
+
+}

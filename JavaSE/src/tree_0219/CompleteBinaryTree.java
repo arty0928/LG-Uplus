@@ -24,7 +24,7 @@ public class CompleteBinaryTree<E> {
 
 	// 데이터를 저장할 배열
 	private Object[] nodes;
-	private int lastIndex;		// 저장한 데이터 갯수, 다음 노드를 저장할 위치
+	private int lastIndex;		// 현재 노드를 저장할 위치
 	private final int SIZE;		// tree의 크기
 
 	public CompleteBinaryTree(int size) {
@@ -43,7 +43,18 @@ public class CompleteBinaryTree<E> {
 		return lastIndex == SIZE;
 	}
 	
-	private void inOrder(int current) {
+	public void add(E e) {
+		if(isFull()) {
+			System.err.println("포화 상태입니다.");
+			return;
+		}
+		
+		// 0번 인덱스는 안씀
+		nodes[++lastIndex] = e;
+		
+	}
+	
+	public void inOrder(int current) {
 		if (current <= lastIndex) {
 			// 왼쪽 자식노드 방문처리
 			inOrder(current * 2); 
@@ -53,6 +64,33 @@ public class CompleteBinaryTree<E> {
 			inOrder(current * 2 + 1); 
 		}
 	}
+	
+	public void preOrder(int current) {
+		if(current <= lastIndex) {
+			// 현재 노드 방문 처리
+			System.out.print(nodes[current] + " ");
+			
+			// 왼쪽 자식 노드 방문 처리
+			preOrder(current*2);
+			// 오른쪽 자식 노드 방문 처리
+			preOrder(current * 2 + 1);
+		}
+	}
+	
+	
+	public void postOrder(int current) {
+		if(current <= lastIndex) {
+			// 왼쪽 자식 노드 방문 처리
+			postOrder(current*2);
+			// 오른쪽 자식 노드 방문 처리
+			postOrder(current * 2 + 1);
+			
+			// 현재 노드 방문 처리
+			System.out.print(nodes[current] + " ");
+		}
+	}
+	
+	
 
 }
 
