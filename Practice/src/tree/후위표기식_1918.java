@@ -33,47 +33,58 @@ public class 후위표기식_1918 {
 		for (int i = 0; i < N; i++) {
 			char cur = line.charAt(i);
 			
-			// 1. 알파벳은 그냥 출력
-			if (cur >= 'A' && cur <= 'Z') {
-				sb.append(cur);
-				continue;
-			}
+			switch(cur) {
+				case '+':
+				case '-':
+				case '*':
+				case '/':
+					while(!stack.isEmpty() && (haveToPop(cur)) <= haveToPop(stack.peek())) {
+						sb.append(stack.pop());
+					}
+					stack.push(cur);
+					break;
+				
 			
-			// ) 를 만나면 ( 만날 때까지 pop 출력
-			if (cur == ')') {
-				while(!stack.isEmpty() && stack.peek() != '(') {
-					sb.append(stack.poll());
-				}
-				stack.poll(); // ( 제거
-				continue;
+				// ( 를 만나면 push 만
+				case '(':
+					stack.push(cur);
+					break;
+				
+				// ) 를 만나면 ( 만날 때까지 pop 출력
+				case ')':
+					while(!stack.isEmpty() && stack.peek() != '(') {
+						sb.append(stack.pop());
+					}
+					stack.pop(); // ( 제거
+					break;
+				
+				// 알파벳은 그냥 출력
+				default:
+					sb.append(cur);
 			}
-			
-			// cur 의 우선순위 < peek : pop해서 출력
-			if (!stack.isEmpty() 
-					&& haveToPop(cur, stack.peek()) == true){
-				while(!stack.isEmpty()) {
-					sb.append(stack.poll());
-				}
-				stack.offer(cur);
-				continue;
-			}
-			
-			// 그게 아니면 그냥 stack 에 넣기
-			stack.offer(cur);
 		}
 		
 		while(!stack.isEmpty()) {
-			sb.append(stack.poll());
+			sb.append(stack.pop());
 		}
+		
+		System.out.println(sb);
 		
 	}
 	
-	static boolean haveToPop(char cur, char top) {
+	static int haveToPop(char op) {
+		if(op =='(' || op == ')') {
+			return 0;
+		}
 		
-		System.out.println("cur = " + cur + " top = " + top);
-		if(cur == '*' && top == '+' || cur == '*' && top == '-') return true;
-		if(cur == '/' && top == '+' || cur == '/' && top == '-') return true;
-		return false;
+		else if (op == '+' || op =='-') {
+			return 1;
+		}
+		
+		// * /
+		else {
+			return 2;
+		}
 	}
 
 }

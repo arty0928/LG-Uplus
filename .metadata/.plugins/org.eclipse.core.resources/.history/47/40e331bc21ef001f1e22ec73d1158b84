@@ -1,0 +1,14 @@
+package greedy_0220;
+
+/*
+ * 봉지가 3 kg, 5 kg 딱 2개이므로 greedy로 가능, 봉지가 많아지면 dp로
+ */
+
+public class 설탕배달_2839 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
