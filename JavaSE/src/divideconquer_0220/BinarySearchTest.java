@@ -15,22 +15,29 @@ public class BinarySearchTest {
 		System.out.println(Arrays.toString(values));
 		System.out.println(binarySearch1(65));
 		System.out.println(binarySearch1(2));
+		System.out.println(binarySearch1(12));
+		
 		System.out.println("===================================");
 		System.out.println(binarySearch2(65,0,values.length-1));
+		System.out.println(binarySearch2(72,0,values.length-1));
 		System.out.println(binarySearch2(2,0,values.length-1));
+		System.out.println(binarySearch2(12,0,values.length-1));
+		
 		System.out.println("===================================");
+		// 못찾으면 -insertion point-1 값 리턴(0인덱스와 구분하기 위해 음수화시키고 -1)
+		// 해당 위치에 데이터를 추가할 때는 Math.abs(idx) + 1
 		System.out.println(Arrays.binarySearch(values, 65));
 		System.out.println(Arrays.binarySearch(values, 2));
-		// 못찾으면 -insertion point-1 값 리턴(0인덱스와 구분하기 위해 음수화시키고 -1)
+		System.out.println(Arrays.binarySearch(values, 12)); // -3이 나옴. 절댓값 후 -1 하면 "있어야 하는 위치"라는 뜻
 	}
 	private static int binarySearch1(int key) {
 		//찾으려는 범위의 시작 위치, 끝 위치, 중간 위치를 위한 변수를 선언한다. 
-		int start = 0, end = values.length - 1;
+		int start = 0, end = values.length - 1, mid = 0;
 		
 		// 데이타를 찾을 때 까지 반복 하면서 
 		while(start <= end) {
 			// 주어진 범위를 이용해서 mid값을 구한다. 
-			int mid = (start + end) >> 1;
+			mid = (start + end) >> 1;
 		
 			// mid 위치에 데이타와 탐색하려는 데이타가 같으면 mid 위치를 반환한다. 
 			if(key == values[mid]) {
@@ -55,7 +62,8 @@ public class BinarySearchTest {
 	private static int binarySearch2(int key,int start,int end) {
 		
 		int mid = (start + end) >> 1;
-		
+		System.out.println("start = " + start + " mid = " + mid + " end = " + end);
+			
 		if (start > end) return -1; 
 		
 		if(values[mid] == key) return mid;

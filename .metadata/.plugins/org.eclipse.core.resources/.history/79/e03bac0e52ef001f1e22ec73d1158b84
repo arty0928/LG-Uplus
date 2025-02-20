@@ -1,0 +1,61 @@
+package greedy_0220;
+
+import java.io.BufferedReader;
+
+/*
+ * N / 2 를 분할정복, 재귀를 통해서 1이면 DFS 로 연결, 
+ * 		if(!visited && 1이면 들어가기)
+ * 			count_1 ++;
+ * 			visitied = true
+ * 
+ * 
+ * 		상하좌우 더 이상 갈 수 없으면 끝내기
+ * 
+ * N^2 - 1 개수 = 0 의 개수
+ */
+import java.io.InputStreamReader;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Main_2630_S2_색종이만들기 {
+	
+	static int N, blue, white;
+	static int[][] map;
+	
+	public static void main(String[] args) throws Exception {
+		 BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		 N = Integer.parseInt(in.readLine());
+		 
+		 map = new int[N][N];
+		 blue =0; white =0;
+		 
+		 for (int i = 0; i < N; i++) {
+			StringTokenizer st = new StringTokenizer(in.readLine());
+			
+			for (int j = 0; j < N; j++) {
+				map[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		 
+//		 backtrack(0,0,N, 1);
+//		 System.out.println("white = " + white);
+		 System.out.println(N >> 1);
+	}
+	
+	static void backtrack(int y, int x, int size, int color) {
+
+		if(map[y][x] != color) {
+			white++;
+			return;
+		}
+		
+		backtrack(y, x, size >> 2, 1);
+		backtrack(y + size >> 2, x, size >> 2, 1);
+		backtrack(y, x + size >> 2, size >> 2, 1);
+		backtrack(y + size >> 2, x + size >> 2, size >> 2, 1);
+	
+		
+	}
+}

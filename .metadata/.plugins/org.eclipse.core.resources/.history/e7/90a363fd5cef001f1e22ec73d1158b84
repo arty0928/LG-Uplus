@@ -1,0 +1,34 @@
+package greedy_0220;
+
+import java.io.*;
+import java.util.*;
+
+/**
+ * 많은 점수를 받기 위해 
+ * 데드라인이 짧은 과제 중 점수가 높은 것부터 해결하기.
+ * 
+ * 1. PQ에 과제 데드라인 오름차순, 점수 내림차순 
+ * 2. PQ를 돌면서
+ * 		선택 PQ (오름차순)
+ * 		1. 선택 PQ 사이즈 < N : 아직 더 넣을 수 있다.
+ * 			넣고 continue;
+ * 		2. 선택 PQ 사이즈 == N : (이미 다 차있다)
+ * 			맨 앞에서 부터 == 제일 score가 작은 애부터 빼기
+ * 
+ * 3. 선택 PQ 돌면서 누적 합.
+ */
+
+public class Main_13904_G3_과제_greedy2 {
+	
+	static int deadline,score;
+
+	public static void main(String[] args) throws Exception {
+		 BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+	     int N = Integer.parseInt(in.readLine());
+	     
+	     
+	     
+	}
+
+}

@@ -1,0 +1,34 @@
+package greedy_0220;
+
+import java.io.BufferedReader;
+
+/*
+ * N / 2 를 분할정복, 재귀를 통해서 1이면 DFS 로 연결, 
+ * 		if(!visited && 1이면 들어가기)
+ * 			count_1 ++;
+ * 			visitied = true
+ * 
+ * 
+ * 		상하좌우 더 이상 갈 수 없으면 끝내기
+ * 
+ * N^2 - 1 개수 = 0 의 개수
+ */
+import java.io.InputStreamReader;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Main_2630_S2_색종이만들기 {
+	
+	static int[][] map;
+	static boolean[][] visited;
+	
+	public static void main(String[] args) throws Exception {
+		 BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+
+		 map = new int[N][N];
+		 
+	    
+	}
+
+}
