@@ -48,31 +48,26 @@ public class Main_1781_G2_컵라면 {
 			
 			pq.add(new int[] {d,s});
 		}
+
+	     PriorityQueue<Integer> scorePQ = new PriorityQueue<>();
 	     
-//	     for (int[] is : pq) {
-//			System.out.println(is[0] + "  " + is[1]);
-//		}
+	     while(!pq.isEmpty()) {
+	    	 int[] cur = pq.poll();
+	    	 int d = cur[0], s = cur[1];
+	    	 
+	    	 if(scorePQ.size() < d) scorePQ.offer(s);
+	    	 else {
+	    		 if(scorePQ.peek() < s) {
+	    			 scorePQ.poll();
+	    			 scorePQ.offer(s);
+	    		 }
+	    	 }
+	     }
 	     
-	     Map<Integer,Integer> hm = new HashMap<>();
-	     
-	     for (int i = 0; i < N; i++) {
-			int[] cur = pq.poll();
-			int d = cur[0], s = cur[1];
-			
-			if(hm.containsKey(d)) {
-				int value = hm.get(d);
-				if(value < s) hm.put(d, s);
-			}
-			else {
-				hm.put(d, s);
-			}
-		}
-	     	
 	     long result = 0;
-	     for (Entry<Integer, Integer> entry : hm.entrySet()) {
-			result += entry.getValue();
+	     for (Integer integer : scorePQ) {
+			result += integer;
 		}
-	     
 	     System.out.println(result);
 	}
 

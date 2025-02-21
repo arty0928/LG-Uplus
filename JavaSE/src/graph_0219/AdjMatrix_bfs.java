@@ -45,7 +45,7 @@ public class AdjMatrix_bfs {
 	 * 너비 우선 탐색
 	 */
 	private static void BFS(int cur) {
-//		너비를 우선으로 탐색하기 위한 큐 선언
+//		너비를 우선으로 탐색하기 위한 큐 선언, LinkedList는 링크를 타고 가야 하므로 ArrayDeque가 더 빠름.
 		Queue<Integer> q = new ArrayDeque<>();
 		
 //		첫 노드 방문 처리

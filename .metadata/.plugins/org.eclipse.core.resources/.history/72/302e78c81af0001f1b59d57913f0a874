@@ -1,0 +1,89 @@
+package graph_0219;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.Arrays;
+import java.util.StringTokenizer;
+
+/*
+ * DFS 
+ * 		1. Origin, New map을 만든다.
+ * 		2. for문 돌면서 방문 x && 1이면 dfs 시작.
+ * 			lastCount += cnt;
+ * 		
+ * 		dfs
+ * 			방문처리
+ * 			사방 처리 :
+ * 				!방문 && 1이면 
+ * 					cnt ++;
+ * 					dfs()
+ * 				
+ */
+public class Main_2636_G4_치즈_prc {
+
+	static int[][] originMap, newMap;
+	static boolean[][] visited;
+	static int N,M;
+	
+	static int[] dy = {-1,1,0,0}, dx = {0,0,-1,1};
+	
+	public static void main(String[] args) throws Exception {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine());
+		
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		
+		originMap = new int[N][M];
+		visited = new boolean[N][M];
+		
+		for (int i = 0; i < N; i++) {
+			st = new StringTokenizer(br.readLine(), " ");
+			
+			for (int j = 0; j < M; j++) {
+				originMap[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		
+		
+//		while(!checkContinue()) {
+//			
+//		}
+		
+			for (int i = 0; i < N; i++) {
+				for (int j = 0; j < M; j++) {
+					
+					if(!visited[i][j] && originMap[i][j] == 1) {
+						dfs(i,j);
+					}
+				}
+			}
+			
+			// 원본 업데이트
+			for (int i = 0; i < N; i++) {
+				originMap[i] = Arrays.copyOf(newMap[i], M);
+			}
+		
+	}
+	
+	static void dfs(int y, int x) {
+		visited[y][x] = true;
+		
+		int ny, nx = 0;
+		for (int d = 0; d < 4; d++) {
+			ny = y + dy[d];
+		}
+		
+	}
+	
+	static boolean checkContinue() {
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < M; j++) {
+				if(originMap[i][j] == 1) return true;
+			}
+		}
+		
+		return false;
+	}
+
+}
