@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /*
- * 49584 kb	508ms
  * 최소 신장 트리
  *	
  *	edge 오름차순 후 선택
@@ -14,13 +13,13 @@ import java.util.StringTokenizer;
  */
 public class Main_1922_G4_네트워크연결 {
 
-	static int V,E;
+	static int N,M;
 	static Edge[] edgeList;
 	static int[] parents;
 	
 	static void make() {
-		parents = new int[V + 1];
-		for (int i = 1; i <= V; i++) {
+		parents = new int[M];
+		for (int i = 0; i < M; i++) {
 			parents[i]= i;
 		}
 	}
@@ -66,17 +65,17 @@ public class Main_1922_G4_네트워크연결 {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		V = Integer.parseInt(br.readLine());
-		E = Integer.parseInt(br.readLine());
+		N = Integer.parseInt(br.readLine());
+		M = Integer.parseInt(br.readLine());
 		
-		edgeList = new Edge[E];
+		edgeList = new Edge[M];
 		StringTokenizer st;
 		
-		for (int i = 0; i < E; i++) {
+		for (int i = 0; i < M; i++) {
 			st = new StringTokenizer(br.readLine());
 			
-			int from = Integer.parseInt(st.nextToken());
-			int to = Integer.parseInt(st.nextToken());
+			int from = Integer.parseInt(st.nextToken())-1;
+			int to = Integer.parseInt(st.nextToken())-1;
 			int w = Integer.parseInt(st.nextToken());
 			
 			edgeList[i] = new Edge(from,to,w);
@@ -85,7 +84,7 @@ public class Main_1922_G4_네트워크연결 {
 		make();
 		
 		Arrays.sort(edgeList);
-//		System.out.println(Arrays.toString(edgeList));
+		System.out.println(Arrays.toString(edgeList));
 		
 		int count = 0; // 몇개의 간선 연결
 		int result = 0; // 누적 합
@@ -94,7 +93,7 @@ public class Main_1922_G4_네트워크연결 {
 			if(union(edge.from, edge.to)) {
 				result += edge.weight;
 				
-				if(++count == V-1) break;
+				if(++count == M-1) break;
 			}
 		}
 		

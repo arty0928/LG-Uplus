@@ -6,7 +6,6 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 /*
- * 49584 kb	508ms
  * 최소 신장 트리
  *	
  *	edge 오름차순 후 선택
@@ -14,33 +13,8 @@ import java.util.StringTokenizer;
  */
 public class Main_1922_G4_네트워크연결 {
 
-	static int V,E;
+	static int N,M;
 	static Edge[] edgeList;
-	static int[] parents;
-	
-	static void make() {
-		parents = new int[V + 1];
-		for (int i = 1; i <= V; i++) {
-			parents[i]= i;
-		}
-	}
-	
-	static int find(int a) {
-		if(parents[a] == a) return a;
-		
-		return parents[a] = find(parents[a]);
-	}
-	
-	static boolean union(int a, int b) {
-		int aRoot = find(a);
-		int bRoot = find(b);
-		
-		if(aRoot == bRoot) return false;
-		
-		parents[aRoot] = bRoot;
-		
-		return true;
-	}
 	
 	static class Edge implements Comparable<Edge>{
 		int from,to,weight;
@@ -48,11 +22,6 @@ public class Main_1922_G4_네트워크연결 {
 		@Override
 		public int compareTo(Edge o) {
 			return this.weight - o.weight;
-		}
-
-		@Override
-		public String toString() {
-			return "Edge [from=" + from + ", to=" + to + ", weight=" + weight + "]\n";
 		}
 
 		public Edge(int from, int to, int weight) {
@@ -66,13 +35,13 @@ public class Main_1922_G4_네트워크연결 {
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		V = Integer.parseInt(br.readLine());
-		E = Integer.parseInt(br.readLine());
+		N = Integer.parseInt(br.readLine());
+		M = Integer.parseInt(br.readLine());
 		
-		edgeList = new Edge[E];
+		edgeList = new Edge[N];
 		StringTokenizer st;
 		
-		for (int i = 0; i < E; i++) {
+		for (int i = 0; i < M; i++) {
 			st = new StringTokenizer(br.readLine());
 			
 			int from = Integer.parseInt(st.nextToken());
@@ -82,23 +51,7 @@ public class Main_1922_G4_네트워크연결 {
 			edgeList[i] = new Edge(from,to,w);
 		}
 		
-		make();
-		
 		Arrays.sort(edgeList);
-//		System.out.println(Arrays.toString(edgeList));
-		
-		int count = 0; // 몇개의 간선 연결
-		int result = 0; // 누적 합
-		
-		for (Edge edge : edgeList) {
-			if(union(edge.from, edge.to)) {
-				result += edge.weight;
-				
-				if(++count == V-1) break;
-			}
-		}
-		
-		System.out.println(result);
 	}
 
 }
