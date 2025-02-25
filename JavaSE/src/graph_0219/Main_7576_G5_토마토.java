@@ -51,11 +51,12 @@ public class Main_7576_G5_토마토 {
 			
 		}
 		
+		top:
 		for (int i = 0; i < M; i++) {
 			for (int j = 0; j < N; j++) {
 				if(map[i][j] == 0) {
 					answer = -1;
-					break;
+					break top;
 				}
 			}
 		}

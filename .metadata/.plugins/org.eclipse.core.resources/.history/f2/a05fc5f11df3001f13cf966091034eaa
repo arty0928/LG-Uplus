@@ -1,0 +1,30 @@
+package graph_0225;
+
+public class Union_암기 {
+	
+		static int N;
+		static int[] parents;
+
+	static void make() {
+		for (int i = 0; i < N; i++) {
+			
+		}
+	}
+		
+	
+	static int find(int v) {
+		
+	}
+	
+	static boolean union(int a, int b) {
+		
+	}
+		
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		N = 6;
+		parents = new int[6];
+	}
+
+}
