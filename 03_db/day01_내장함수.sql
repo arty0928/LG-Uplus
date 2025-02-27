@@ -218,8 +218,10 @@ date_format(column,  format)
 select date_format(sysdate(), '%y년 %m월 %d일 -  %p %h시 %i분 %s초') as today
 from dual;
 
--- date_format을 이용해서 이번 달에 판매된 상품 조회 
-
+-- date_format을 이용해서 이번 해, 이번 달에 판매된 상품 조회 
+select *
+from orders
+where date_format(now(), '%y%m') = date_format(odate, '%y%m');
 
 
 
