@@ -1,4 +1,4 @@
-CREATE TABLE EMP(
+empCREATE TABLE EMP(
 	EMPNO int(4)  PRIMARY KEY,		-- 사원번호
 	ENAME VARCHAR(10),				-- 사원이름
 	JOB VARCHAR(9),					-- 업무
