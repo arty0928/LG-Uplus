@@ -3655,3 +3655,12 @@ Java Model Exception: Error in Java Model (code 969): Practice does not exist
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-28 15:03:38.232
 !MESSAGE Classpath changed for project: Practice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-28 16:06:29.309
+!MESSAGE Classpath changed for project: Practice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-28 16:06:44.547
+!MESSAGE Classpath changed for project: Algo_Practice
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-28 16:06:44.753
+!MESSAGE Classpath changed for project: Algo_Practice
