@@ -86,14 +86,27 @@ from emp;
     - group by와 함께 집계함수를 사용하면 집계함수의 결과는 group개수로 조회된다. 
 */
 
+
 -- 부서별 인원수와, 평균 급여를 조회 
 select deptno, count(*), avg(sal)
 from emp 
 group by deptno
 order by deptno;
 
+-- 업무별 인원수와, 평균 급여를 조회
+select job, count(*) as 인원, round(avg(sal))
+from emp
+group by job
+order by job;
+
+-- 부서별 / 업무별 인원수와, 평균 급여 조회 
+select deptno, job, count(*) as 근무인원, round(avg(sal),2) as sal
+from emp
+group by deptno, job
+order by deptno, job;
+
 /* having
-   - group 집계한 결과에 대한 조건은 having절에서 한다. 
+   - group 집계한 결과에 대한 조건은 having절에서 한다. ( 얘는 탈락, 얘는 선택할 거야! )
    - 형식]  
      select   집계함수
      from     테이블
@@ -102,39 +115,60 @@ order by deptno;
      having   집계한 결과에 대한 조건(알리아스)
      
  where => 행 하나 하나에 대한 조건 처리  
+ 
+ 행에 대한 조건은 where, 그룹의 조건은 having에서
 */
 
--- 부서별 평균 급여가 5000이상인 부서를 조회
+-- 부서별 평균 급여가 2000이상인 부서를 조회
+select deptno, avg(sal) as AvgSal
+from emp
+group by deptno having AvgSal >= 2000 ;
 
+select * from emp where empno = 1;
+insert into emp(empno, ename, sal, deptno) values(1, 'eureka',5000, 40);
 
+-- 사원의 급여가 1000이상 사원들이 근무하는 부서 중 평균 급여가 5000이상인 부서를 조회
+select deptno, min(sal), round(avg(sal),2) as AvgSal
+from emp
+group by deptno having min(sal) >= 1000 and AvgSal >= 5000;
 
--- 사원의 급여가 3000이상 사원들이 근무하는 부서 중 평균 급여가 5000이상인 부서를 조회
-
-
+-- 사원의 급여가 1000이상 사원들이 근무하는 부서 중 평균 급여가 5000이상인 부서를 조회
+select deptno, round(avg(sal),2) as AvgSal
+from emp
+where sal >= 3000
+group by deptno
+having AvgSal >= 5000;
 
 
 -- 알리아스를 where에서 사용할 수 없다. 
 
-
-
--- 부서별 급여 평균과, 최소 급여, 최대 급여를 조회 
-
-
--- 업무별 근무 인원, 급여 평균과, 최소 급여, 최대 급여를 조회 
-
-
 -- 업무별 급여 평균이 2500이상이 업무 조회 
+select * from emp;
 
+select ifnull(JOB, '프리랜서'), round(avg(sal),2) as AvgSal
+from emp
+group by JOB having AvgSal >= 2500;
 
 -- 카테고리별 가격 평균을 조회 단, 가격 평균이 500000이상인 카테고리는 제외하고 조회한다. 
+select * from goods;
 
+select ifnull(cno,'미분류') as cno, round(avg(price),2) as AvgPrice
+from goods
+group by cno having AvgPrice < 500000;
 
 -- 급여가 1500이상인 사원들의 부서별 급여 평균을 조회
 -- 단 급여 평균이 2000이상인 부서만 조회 
+select deptno , round(avg(sal)) as AvgSal
+from emp
+where sal >= 1500 
+group by deptno having AvgSal >= 2000;
 
 
-
-/*rollup :group별 통계에  전체 통계를 추가로 조회 
+/*rollup 
+		: group별 통계에  전체 통계를 추가로 조회
+          
+          그룹으로 나눈 전 단계에 대한 rollup을 해준다.
+          
   형식] group by 컬럼명 with rollup;
  */
 -- 업무별 근무 인원, 급여 평균과, 최소 급여, 최대 급여를 조회
