@@ -34,11 +34,14 @@
 	</list>
 	<section name="ExternalProjectImportWizard">
 		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
-		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\uplus\workspace\Algo_Practice"/>
+			<item value="C:\uplus\workspace\Practice"/>
+			<item value="C:\uplus\workspace\Algo"/>
 			<item value="C:\Users\student\Documents\lecture\springBoot\수업예제"/>
 			<item value="C:\Users\student\Documents\lecture\springBoot\boj.bronze"/>
 			<item value="C:\Users\student\Documents\lecture\springBoot\Practice"/>
