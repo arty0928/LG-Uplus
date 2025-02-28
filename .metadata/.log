@@ -3664,3 +3664,10 @@ Java Model Exception: Error in Java Model (code 969): Practice does not exist
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-02-28 16:06:44.753
 !MESSAGE Classpath changed for project: Algo_Practice
+
+!ENTRY org.eclipse.core.resources 2 2 2025-02-28 16:11:44.716
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-02-28 16:11:44.716
+!MESSAGE The project description file (.project) for 'Algo' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-02-28 16:11:44.716
+!MESSAGE The project description file (.project) for 'Algo_Practice' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
