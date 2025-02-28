@@ -163,7 +163,6 @@ from emp
 where sal >= 1500 
 group by deptno having AvgSal >= 2000;
 
-
 /*rollup 
 		: group별 통계에  전체 통계를 추가로 조회
           
@@ -172,7 +171,14 @@ group by deptno having AvgSal >= 2000;
   형식] group by 컬럼명 with rollup;
  */
 -- 업무별 근무 인원, 급여 평균과, 최소 급여, 최대 급여를 조회
-
+select ifnull(job, '프리랜서') as job, 
+	count(*)  		as "근무 인원",
+	round(avg(sal)) as AvgSal,
+    min(sal) 		as MinSal,
+    max(sal)		as MaxSal
+from emp
+group by job with rollup; -- 전단계의 집계 (근무인원, avg, min, max rollup)
+-- 이렇게 하면 rollup 한 행도 '프리랜서'라고 나온다. ==> grouping 등장
 
 
 /**oralce 버전
@@ -182,13 +188,37 @@ group by rollup(job);
 */
 
 /*grouping()
-  rollup에 의해 조회된 데이타는 1 그렇지 않은 데이타는 0이 조회된다. 
+  rollup에 의해 조회된 데이타는 1, 그렇지 않은 데이타는 0이 조회된다. 
 */
+select grouping(job), ifnull(job, '프리랜서') as job, 
+	count(*)  		as "근무 인원",
+	round(avg(sal)) as AvgSal,
+    min(sal) 		as MinSal,
+    max(sal)		as MaxSal
+from emp
+group by job with rollup; -- 전단계의 집계 (근무인원, avg, min, max rollup)
 
+-- 			  조건이 참이면 	  total  , 거짓이면 프리랜서
+select if(grouping(job) = 1 , 'total', ifnull(job, '프리랜서')) as job, 
+	count(*)  		as "근무 인원",
+	round(avg(sal)) as AvgSal,
+    min(sal) 		as MinSal,
+    max(sal)		as MaxSal
+from emp
+group by job with rollup; -- 전단계의 집계 (근무인원, avg, min, max rollup)
 
+-- 카테고리별 가격 평균, 최저 가격, 최고 가격 조회
+select * from goods;
 
 -- cno가 null인 경우 미분류로 표시, 그렇지 않으면 카테고리 번호로 표시 
 -- rollup에 의해 null인 경우 total 
+select if(grouping(cno) = 1, 'total', ifnull(cno, '미분류')) as cno,
+		round(avg(price),2)	as AvgPrice,
+		min(price)		 	as MinPrice,
+		max(price)			as MaxPrice
+from 	goods
+group by cno with rollup;
+-- 여기서 order by cno를 하면 total이 중간에 껴버림.
  
 
 
