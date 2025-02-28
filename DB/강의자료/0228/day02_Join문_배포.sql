@@ -241,13 +241,35 @@ select g.gno, g.brand, ifnull(sum(o.quantity), 0) as total -- 3번
 from goods g left join orders o using (gno) -- 1번
 group by g.gno; -- 2번
 
+select gno, sum(quantity) as total_quantity
+from orders
+group by gno;
+
+
+select gno, brand, ifnull(quantity,0) as total
+from goods
+left join (select gno, sum(quantity) as quantity
+			from orders
+            group by gno) o
+using (gno);
 
 /*
 self join 
  - 한개의 테이블로 join 
- - 테이블에 alias를 이용해서 구별한다. 
+ - 테이블의 컬럼들에 alias를 이용해서 구별한다. 
 */
 -- 사원번호, 사원이름, 업무, 급여, 상사번호, 상사이름 조회 
+
+-- vender
+select e.empno, e.ename, e.job, e.sal, e.mgr, m.ename
+from emp e, emp m
+where e.MGR  = m.EMPNO;
+
+-- ansi
+select e.empno, e.ename, e.job, e.sal, e.mgr, m.ename
+from emp e
+join emp m
+on e.MGR  = m.EMPNO;
 
 
 -- 모든 사원에 대한 사원번호, 사원이름, 업무, 급여, 상사번호, 상사이름 조회
@@ -260,14 +282,21 @@ self join
 -- 네이버 면접 질문 
 -- weather (ymd : date, temp : int, city : string ) 1년치 데이터가 있다고 할때, 
 -- 전날보다 온도가 높아진 날이 가장 많았던 도시를 출력하시오       
-			
+--  어제 : 오늘 - 1 or 어제 + 1 = 오늘
+-- 데이터에 저장된 날짜는 고정되어 있기 때문에 (데이터에 저장된 날짜 + 1 ) 하면 됨
+
+
 
 -- 전날(어제)보다 판매 개수가 많은 날이 가장 많았던 상품을 조회하시오
  
 
 
 -- Natural join
+-- join 조건을 주지 않고 Natural join이 알아서 진행
 
+	-- 동일한 컬럼명을 조인 조건으로 사용. equi join
+select empno, ename, deptno, dname
+from emp  natural join dept;
 
 
 
