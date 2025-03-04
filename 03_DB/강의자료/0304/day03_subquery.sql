@@ -242,6 +242,7 @@ where gno not in (select distinct gno from orders);
               
 /*
  N-top 
+	: 
  mysql : limit  시작숫자,개수
          시작 숫자는 0부터 
  기타   : rownum
@@ -250,7 +251,10 @@ where gno not in (select distinct gno from orders);
 
 -- 급여가 높은 사원 5명 조회 
 -- mysql 
-
+select *
+from emp
+order by sal desc	-- 급여가 높은 순으로
+limit 0, 5;			-- 처음부터 5개
               
 -- oralce , db, ms-sql             
   
