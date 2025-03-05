@@ -23,10 +23,14 @@
  1) 개체 무결성 (Entity integrity)  
 	모든 테이블이 기본 키 (primary key)로 선택된 필드 (column)를 가져야 한다. 
 	기본 키로 선택된 필드는 고유한 값을 가져야 하며, 빈 값은 허용하지 않는다.
+    
+    - 가장 많이 쓰면서, 길이가 짧은 것
 	
 2) 참조 무결성 (Referential integrity) (FK)
   관계형 데이터베이스 모델에서 참조 무결성은 참조 관계에 있는 두 테이블의 데이터가 항상 일관된 값을 갖도록 유지되는 것을 말한다
-  
+	- 부모 테이블에 없는 값을 자식 테이블에 넣으려면 아예 안 들어감
+	- 자식 테이블에서 참조하고 있는 부모 테이블의 값을 삭제하는 것도 안됨.
+	  => 부모 테이블에서 삭제 -> 자식 테이블에서도 같이 삭제
 **/
 
 /* 주문 테이블 
@@ -41,13 +45,13 @@
 -- 날짜 기본값 설정  5.6.5 미만은 now()
 -- 날짜 기본값 설정  5.6.5 이상은 current_timestamp
 create table orders(
-     ono 		int primary key auto_increment
+     ono 		int primary key auto_increment -- auto_increment -> 하나씩 데이터를 자동으로 부여하는 기능 (mysql에만 있음)
     ,odate		datetime  default current_timestamp
     ,id  		varchar(30) 
     ,gno		int	not null
     ,quantity	int
     ,address	varchar(200)
-    ,foreign key fk_orders_id(id)	references member(id)
+    ,foreign key fk_orders_id(id)	references members(id)
     ,foreign key fk_orders_gno(gno)	references goods(gno)
 );
 
@@ -56,6 +60,11 @@ create table orders(
 table level
 [constraint]  제약조건 제약조건명
 
+유니크 : 중복 X , NULL OK
+기본키 : 중복 X , NULL X
+
+mysql  : PK, FK, Unique -> index 자동 생성
+oracle : PK 만 			-> index 자동 생성 
 
 외래키 
 [constraint]  foreign key  제약조건명(컬럼명)  reference 참조할테이블명(참조할컬럼명)  [option]
@@ -76,10 +85,38 @@ check
  형식] 
  [contraint] check (조건)
 */
+select * from goods;
+select * from members;
+insert into orders(id, gno, quantity)
+values('eureka',30,10);		-- goods에 없는 상품번호 30번을 입력해서 오류 발생
 
+-- fk에 의해 자식 테이블에서 참조하는 데이터를 삭제할 수 없다.
+delete from goods where gno = 1; -- orders 테이블에서 참조해서 삭제 하면 오류 발생
+
+select * from board;
+select * from boardfile;
+-- 자식(boardfile)에서 참조하고 있어도 
+-- on delete에 대해서 cascade나 set null을 설정하면 삭제할 수 있다
+delete from board where no = 1;
+rollback;
+
+-- fk에 의해 부모 테이블(참조되는)에 없는 데이터를 
+-- 자식 테이블(참조하는)에 insert 또는 update할 수 없다.
 
 -- 8.0.16버전 부터 check 제약조건 됨. 
+create table s_emp(
+	empno	int 			primary key
+    ,ename	varchar(30)		not null
+    ,salary	decimal(11,2)
+    ,commission_pct	decimal(4,2 )
+    ,constraint check (commission_pct in (10, 12.5, 15, 17.5, 20))
+    ,constraint check (salary >= 1000)
+);
+insert into s_emp(empno, ename, salary,commission_pct) values(1, '1',1000, 11);
+insert into s_emp(empno, ename, salary,commission_pct) values(2, '2',100, 10);
+insert into s_emp(empno, ename, salary,commission_pct) values(2, '2',1000, 10);
 
+select * from s_emp;
 
 -- 테이블에 등록된 key 정보 확인
 show indexes in s_emp;
@@ -92,36 +129,49 @@ show create table s_emp;
 */
 
 -- s_emp 테이블에 deptno 추가 
+alter table s_emp add deptno int;
+select * from s_emp;
 
+desc s_emp; -- describe
 
 desc s_emp;
 
 -- 컬럼 타입 변경 
-
+alter table s_emp modify deptno varchar(30);
 
 -- 컬럼 이름 변경   alter table 테이블이름 change  이전컬럼이름  변경할_컬럼이름 변경할_타입;
-
+alter table s_emp change deptno address varchar(200);
 
 -- 컬럼 삭제  alter table 테이블이름 drop 칼럼이름 
+alter table s_emp drop address;
 
+desc s_emp;
 
 -- 테이블 복사 -  데이타와 구조만 카피되고  not null 외의 제약 조건은 카피되지 않는다. 
+create table emp3
+as 
+select * from emp;
 
 -- 제약 조건 추가 
 -- alter table 테이블명 add constraint 이름 제약조건
+alter table emp3 add constraint pk_emp3_empno primary key(empno);
 
+alter table emp3 add constraint fk_emp3_deptno foreign key(deptno) 
+references dept(deptno);
 
 -- 제약 조건 삭제
 -- alter table 테이블명 drop  제약조건  이름
+alter table emp3 drop primary key;  -- pk는 단 하나이므로 이름을 쓰지 않음
+alter table emp3 drop foreign key fk_emp3_deptno;  -- fk는 여러 개일 수 있으므로 이름을 꼭 써야 함.
 
-
--- insert, update 시 날짜 자동 수정   
+-- insert, update 시 날짜 자동 수정  
 -- 주의점) 반드시    `컬럼명` `컬럼명` 으로 컬럼명을 두번 써야 ON에서  error 안남
-
+ALTER TABLE 테이블명 CHANGE `컬럼명` `컬럼명` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL;
+ALTER TABLE orders CHANGE `odate` `odate` TIMESTAMP ON UPDATE CURRENT_TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL;
 
 /*
 테이블 삭제
-DROP [TEMPORARY] TABLE [IF EXISTS]
+DROP [TEMPORARY] TABLE [IF EXISTS] --> 무조건 drop 하면 에러남 -> if exist로 있으면~ 삭제
      tbl_name [, tbl_name] ...
      [RESTRICT | CASCADE]
 주의점 : 부모테이블인 경우 삭제가 안됨.   => 자식 테이블 삭제후 부모 테이블을 삭제해야 한다.
@@ -132,11 +182,14 @@ ex)
   orders 삭제 => member or goods 삭제
 */
 
+drop table members; -- members 테이블을 참조하는 다른 테이블이 있으므로 삭제 x
+
+drop table emp3;
 
 /*
 truncate
 - 테이블의 모든 데이타를 삭제
-- 복구 할 수 없다. 
+- 복구 할 수 없다. (DDL 이라 복구 x)
  */
 truncate 테이블명; 
 
@@ -145,4 +198,11 @@ truncate 테이블명;
 
 select * from emp2;
 -- 테이블의 데이타만 삭제
+
+
+/*
+DB 연결 -> Connection
+SQL    -> Statement
+결과	   -> ResultSet
+*/
  
