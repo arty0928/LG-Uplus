@@ -19,4 +19,6 @@
     <fullyQualifiedTypeName name="org.springframework.context.annotation.ComponentScan"/>
     <fullyQualifiedTypeName name="org.slf4j.Logger"/>
     <fullyQualifiedTypeName name="org.slf4j.ILoggerFactory"/>
+    <fullyQualifiedTypeName name="com.uplus.eureka.member.model.dto.Member"/>
+    <fullyQualifiedTypeName name="com.uplus.eureka.book.model.dto.Book"/>
 </qualifiedTypeNameHistroy>

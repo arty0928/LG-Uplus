@@ -21,7 +21,7 @@ Javax Annotation API 필요 (@Resource,@PostConstruct,@PreDestroy)
   - 객체가 소멸 되기 전에 호출될 메서드를 지정
 
 
-- DI 관련 
+- DI 관련 (Dependency Injection : 의존하는 객체를 주입 받기 )
   @Autowired   				: 속성, 생성자, setter 메서드, 일반 메서드 위에 선언 , spring에서 지원
   @Resouce(name="빈 이름") 	: 속성, setter 메서드 위에 선언 
   @Inject					: 속성, 생성자, setter 메서드, 일반 메서드 위에 선언,  자바에서 지원

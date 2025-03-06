@@ -1,0 +1,21 @@
+REST Ful Service, REST, REST API
+- Representational State Transfer
+
+DAO (Data Access Object) 
+: 데이터를 처리하는 객체
+  테이블 당 1개
+
+Service 
+: 실제 사용자에게 서비스해주는 기능 단위로 개발
+  transaction 처리, DAO 로 해결안 되는 서비스를 위한 기능
+  
+
+Client side rendering
+- react, vue, angular
+
+Server side rendering
+- Next.js
+
+JSON이나 XML을 받아서 화면에 뿌려주는 기술 = Ajax, fetch
+
+

@@ -15,6 +15,7 @@ import com.uplus.eureka.book.model.dto.Book;
 import com.uplus.eureka.book.model.dto.PageBean;
 import com.uplus.eureka.util.DBUtil;
 
+@Repository
 public class BookDaoImp implements BookDao {
 	
 	private DataSource ds;
