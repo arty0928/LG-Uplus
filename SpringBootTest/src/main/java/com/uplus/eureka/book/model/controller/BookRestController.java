@@ -6,12 +6,10 @@ import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.uplus.eureka.book.model.dto.Book;
-import com.uplus.eureka.book.model.dto.BookException;
 import com.uplus.eureka.book.model.dto.PageBean;
 import com.uplus.eureka.book.model.service.BookService;
 
@@ -106,8 +103,29 @@ public class BookRestController {
 	 * 요청 방식이 Put과 Post이면서 요청 데이타가 JOSON 형식일 때 
 	 * 전달되는 요청 packet의 body를 객체로 전달 받을 때 사용하는 Annotation 
 	 */
-  
-
+	
+	// 등록은 PostMapping
+	@PostMapping
+	public ResponseEntity<String> regist(@RequestBody Book book){
+		logger.debug("regist - book : {}", book);
+		service.insert(book);
+		return new ResponseEntity<String>(SUCCESS,HttpStatus.CREATED);
+		
+	}
+	
+	@PutMapping
+	public ResponseEntity<String> update(@RequestBody Book book){
+		logger.debug("update-book: {}", book);
+		service.update(book);
+		return new ResponseEntity<String>(SUCCESS,HttpStatus.OK);
+	}
+	
+	@DeleteMapping("/{isbn}")
+	public ResponseEntity<String> remove(@PathVariable("isbn") String isbn){
+		logger.debug("remove - isbn : {}", isbn);
+		service.remove(isbn);
+		return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+	}
 }
 
 

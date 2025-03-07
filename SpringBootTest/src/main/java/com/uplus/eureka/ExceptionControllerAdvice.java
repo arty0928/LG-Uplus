@@ -21,9 +21,13 @@ public class ExceptionControllerAdvice {
         logger.error(e.getMessage());
 
         HttpHeaders httpHeaders = new HttpHeaders();
+        
+        //에러메세지가 한글인 경우 깨지므로 한글 처리를 위한 응답 헤더 설정
         httpHeaders.add("Content-Type", "application/json; charset=utf-8");
 
         String msg = "처리 중 오류 발생";
+        
+        // 에러가 우리가 만든 EurekaException 이라면
         if (e instanceof EurekaException) {
             msg = e.getMessage();
         }

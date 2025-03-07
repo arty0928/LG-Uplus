@@ -10,7 +10,9 @@ import com.uplus.eureka.member.model.dto.MemberException;
 
 @Service
 public class MemberServiceImp implements MemberService {
+	
 	private MemberDao dao ;
+	
 	public MemberServiceImp(MemberDao dao) {
 		super();
 		this.dao = dao;
@@ -29,35 +31,56 @@ public class MemberServiceImp implements MemberService {
 			throw new MemberException("로그인 처리 중 오류 발생");
 		}
 	}
-	@Override
-	public Member search(String id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	@Override
-	public void regist(Member user) {
+	public Member search(String id) {
+		// TODO 6. id에 해당하는 Member 정보를 dao를 통해 조회하고 리턴한다.  
 		try {
-			Member find = dao.search(user.getId());
+			Member member = dao.search(id);
+			if(member == null) {
+				throw new MemberException("요청한 멤버는 등록되지 않은 멤버 정보입니다.");
+			}
+			return member;
+		}catch(SQLException e) {
+			throw new MemberException("맴버 정보 조회 중 오류 발생");
+		}
+	}
+	
+	@Override
+	public void regist(Member member) {
+		try {
+			Member find = dao.search(member.getId());
 			if(find!=null) {
 				throw new MemberException("이미 등록된 아이디 입니다.");
 			}
-			dao.regist(user);
+			dao.regist(member);
 		} catch (SQLException e) {
 			throw new MemberException("회원 정보 처리 중 오류 발생!!!");
 		}
 	}
 
 	@Override
-	public void update(Member user) {
-		// TODO Auto-generated method stub
-
+	public void update(Member member) {
+		// TODO 9. Member 정보 중 id로 회원 정보를 조회하고 없는 경우 예외 발생하고 있으면 update한다.   
+		try {
+			Member find = dao.search(member.getId());
+			if(find == null) throw new MemberException("등록되지 않은 멤버 정보를 수정할 수 없습니다.");
+			dao.update(member);
+		}catch (SQLException e) {
+			throw new MemberException("멤버 정보 수정 중 오류 발생");
+		}
 	}
-
 	@Override
 	public void remove(String id) {
-		// TODO Auto-generated method stub
-
+		// TODO 11. Member 정보 중 id로 회원 정보를 조회하고 없는 경우 예외 발생하고 있으면 remove한다.
+		try {
+			Member member = dao.search(id);
+			if(member == null) throw new MemberException("등록되지 않은 회원 정보입니다. 삭제할 수 없습니다.");
+			dao.remove(id);
+		}catch(SQLException e) {
+			e.printStackTrace();
+			throw new MemberException("멤버 정보 삭제 중 오류 발생");
+		}
 	}
 
 }

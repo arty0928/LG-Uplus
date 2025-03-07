@@ -21,4 +21,8 @@
     <fullyQualifiedTypeName name="org.slf4j.ILoggerFactory"/>
     <fullyQualifiedTypeName name="com.uplus.eureka.member.model.dto.Member"/>
     <fullyQualifiedTypeName name="com.uplus.eureka.book.model.dto.Book"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpHeaders"/>
 </qualifiedTypeNameHistroy>

@@ -70,12 +70,12 @@ public class MemberDaoImp implements MemberDao {
 	}
 
 	@Override
-	public void update(Member user) throws SQLException {
+	public void update(Member member) throws SQLException {
 
 	}
 
 	@Override
-	public void remove(Member id) throws SQLException {
+	public void remove(String id) throws SQLException {
 
 	}
 

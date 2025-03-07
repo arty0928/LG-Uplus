@@ -1392,3 +1392,467 @@
 2025-03-06 10:21:28,606 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2025-03-06 10:21:28,607 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
 2025-03-06 10:22:37,364 [main] INFO  o.e.m.jdt.internal.UnitTestSupport - Updating SpringBootTestApplicationBookTests.dsTest from maven configuration
+2025-03-06 11:11:08,991 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-03-06 11:25:06,669 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:25:06,679 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:25:06,682 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:25:28,889 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:25:28,893 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:25:28,896 [Worker-16: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:25:31,788 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:25:31,791 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:25:31,794 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:26:16,969 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:26:16,972 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:26:16,974 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:26:33,790 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:26:33,793 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:26:33,796 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:26:47,770 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:26:47,776 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:26:47,778 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:31:36,747 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:31:36,751 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:31:36,754 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:32:02,971 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:32:02,974 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:32:02,977 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:33:44,672 [Worker-22: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:33:44,677 [Worker-22: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:33:44,679 [Worker-22: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:34:36,456 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:34:36,458 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:34:36,461 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:34:46,601 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:34:46,605 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:34:46,607 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:41:51,924 [Worker-18: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.uplus:SpringBootTest:0.0.1-SNAPSHOT @ C:\uplus\workspace\SpringBootTest\pom.xml.
+2025-03-06 11:41:52,167 [Worker-18: Building] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier  to /BookSpringProject/target/classes
+2025-03-06 11:41:52,324 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:41:52,325 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:41:52,328 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:41:53,631 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:41:53,642 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:41:53,644 [Worker-18: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:42:04,816 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:42:04,819 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:42:04,821 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:42:10,742 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 11:42:10,784 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 11:42:10,826 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 11:43:57,759 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 11:43:57,762 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 11:43:57,763 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 11:44:00,086 [Worker-25: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 11:44:00,129 [Worker-25: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 11:44:00,171 [Worker-25: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 13:32:58,634 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:32:58,640 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:32:58,643 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:33:22,883 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:33:22,887 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:33:22,889 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:33:30,424 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:33:30,428 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:33:30,430 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:33:50,912 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:33:50,914 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:33:50,916 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:33:55,552 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:33:55,562 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:33:55,566 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:34:05,842 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:34:05,844 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:34:05,846 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:34:15,808 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:34:15,811 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:34:15,812 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:34:39,434 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:34:39,437 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:34:39,438 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:34:45,635 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:34:45,637 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:34:45,639 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:34:53,681 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:34:53,683 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:34:53,685 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:40:28,810 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:40:28,816 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:40:28,818 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:40:36,134 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:40:36,139 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:40:36,140 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:43:23,231 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:43:23,235 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:43:23,237 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:47:55,197 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:47:55,201 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:47:55,203 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 13:48:31,927 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 13:48:31,929 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 13:48:31,931 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:20:20,402 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:20:20,406 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:20:20,408 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:20:28,897 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:20:28,905 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:20:28,907 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:34:37,055 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:34:37,060 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:34:37,061 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:38:17,909 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:38:17,916 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:38:17,917 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:38:28,804 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:38:28,808 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:38:28,810 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:39:01,256 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:39:01,260 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:39:01,262 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:40:01,064 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:40:01,067 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:40:01,069 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:40:05,574 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:40:05,574 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:40:05,576 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:40:07,644 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:40:07,645 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:40:07,646 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:40:09,153 [Worker-19: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:40:09,156 [Worker-19: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:40:09,158 [Worker-19: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:40:09,245 [Worker-19: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 14:40:09,295 [Worker-19: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 14:40:09,337 [Worker-19: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 14:41:12,969 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:41:12,972 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:41:12,974 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:41:41,778 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:41:41,781 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:41:41,782 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:41:52,129 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:41:52,132 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:41:52,133 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:46:06,381 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:46:06,386 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:46:06,388 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:46:57,553 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:46:57,557 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:46:57,559 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:47:10,288 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:47:10,299 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:47:10,303 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:47:15,286 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:47:15,289 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:47:15,291 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:48:14,055 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:48:14,059 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:48:14,061 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:49:07,082 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:49:07,086 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:49:07,088 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 14:49:13,195 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 14:49:13,210 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 14:49:13,213 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:16:47,136 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:16:47,140 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:16:47,142 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:17:01,997 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:17:02,001 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:17:02,003 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:19:43,486 [Worker-24: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:19:43,537 [Worker-24: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:19:43,594 [Worker-24: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:21:56,666 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:21:56,671 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:21:56,672 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:21:58,767 [Worker-32: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:21:58,811 [Worker-32: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:21:58,852 [Worker-32: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:28:08,457 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:28:08,461 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:28:08,463 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:36:45,735 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:36:45,739 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:36:45,741 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:42:25,029 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:42:25,033 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:42:25,035 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:42:57,704 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:42:57,707 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:42:57,709 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:50:17,214 [Worker-37: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:50:17,256 [Worker-37: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:50:17,297 [Worker-37: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:53:25,412 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:53:25,417 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:53:25,418 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:53:31,239 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:53:31,243 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:53:31,245 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:53:54,406 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:53:54,409 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:53:54,411 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:55:19,642 [Worker-44: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:55:19,683 [Worker-44: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:55:19,724 [Worker-44: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:56:08,887 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:56:08,889 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:56:08,891 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:56:13,258 [Worker-33: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:56:13,300 [Worker-33: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:56:13,340 [Worker-33: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 15:56:20,028 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:56:20,031 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:56:20,033 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:56:49,336 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:56:49,339 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:56:49,340 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:56:54,411 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:56:54,418 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:56:54,420 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:57:19,703 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:57:19,706 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:57:19,707 [Worker-41: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:57:34,186 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:57:34,189 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:57:34,190 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 15:57:42,556 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 15:57:42,566 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 15:57:42,570 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-06 16:22:12,310 [Worker-41: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 16:22:12,352 [Worker-41: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 16:22:12,395 [Worker-41: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-06 16:47:49,712 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-06 16:47:49,748 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 16:47:49,751 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\BookSpringProject\src\test\resources
+2025-03-06 16:47:49,795 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 16:47:49,795 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-06 16:47:49,797 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 09:08:57,308 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-03-07 09:15:52,147 [Worker-19: Check for devtools] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier  to /BookSpringProject/target/classes
+2025-03-07 09:18:00,275 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 09:18:00,286 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 09:18:00,290 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 09:18:21,633 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 09:18:21,637 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 09:18:21,640 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 09:18:24,136 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 09:18:24,144 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 09:18:24,146 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 09:21:05,580 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 09:21:05,582 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 09:21:05,584 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 09:22:05,429 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 09:22:05,432 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 09:22:05,433 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 09:22:53,204 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 09:22:53,251 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 09:22:53,296 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 09:34:29,772 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 09:34:29,775 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 09:34:29,778 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 09:43:29,540 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 09:43:29,544 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 09:43:29,547 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 09:43:29,638 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 09:43:29,686 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 09:43:29,731 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 10:13:37,571 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:13:37,577 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:13:37,579 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:15:17,371 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:15:17,374 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:15:17,376 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:15:48,496 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:15:48,499 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:15:48,501 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:18:22,327 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:18:22,330 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:18:22,332 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:18:36,184 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:18:36,187 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:18:36,189 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:21:40,910 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 10:21:40,958 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 10:21:41,001 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 10:22:48,856 [Worker-29: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 10:22:48,899 [Worker-29: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 10:22:48,940 [Worker-29: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 10:35:14,910 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:35:14,916 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:35:14,918 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:35:36,412 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:35:36,414 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:35:36,416 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:38:22,750 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:38:22,754 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:38:22,756 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:40:34,801 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:40:34,803 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:40:34,805 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:49:50,967 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:49:50,969 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:49:50,972 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:50:43,396 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:50:43,400 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:50:43,402 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:50:57,729 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:50:57,732 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:50:57,736 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 10:51:01,061 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 10:51:01,063 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 10:51:01,065 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:09:04,982 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:09:04,991 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:09:04,993 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:09:52,510 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:09:52,513 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:09:52,515 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:09:58,967 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:09:58,975 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:09:58,976 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:10:40,469 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:10:40,472 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:10:40,475 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:12:00,898 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:12:00,900 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:12:00,902 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:13:33,637 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:13:33,640 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:13:33,642 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:17:03,919 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:17:03,923 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:17:03,925 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:23:11,200 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:23:11,204 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:23:11,205 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:23:32,151 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:23:32,154 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:23:32,156 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:23:38,989 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:23:38,993 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:23:38,994 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:25:29,400 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:25:29,403 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:25:29,404 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:25:48,403 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:25:48,406 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:25:48,408 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:26:07,990 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:26:07,993 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:26:07,995 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:26:15,091 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:26:15,094 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:26:15,095 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:26:42,679 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:26:42,681 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:26:42,683 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:27:54,784 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 11:27:54,792 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 11:27:54,795 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 11:42:23,080 [Worker-24: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 11:42:23,129 [Worker-24: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 11:42:23,172 [Worker-24: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 11:44:04,503 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 11:44:04,547 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 11:44:04,588 [Worker-20: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 12:48:37,419 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 12:48:37,461 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 12:48:37,501 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 12:51:57,809 [Worker-26: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 12:51:57,859 [Worker-26: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 12:51:57,900 [Worker-26: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:02:41,861 [Worker-27: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:02:41,902 [Worker-27: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:02:41,943 [Worker-27: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:03:41,935 [Worker-26: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:03:41,975 [Worker-26: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:03:42,015 [Worker-26: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:08:29,289 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 13:08:29,293 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 13:08:29,295 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 13:11:26,477 [Worker-27: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:11:26,518 [Worker-27: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:11:26,558 [Worker-27: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:13:26,119 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 13:13:26,122 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 13:13:26,124 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 13:25:56,861 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 13:25:56,863 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 13:25:56,864 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 13:27:14,199 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 13:27:14,201 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 13:27:14,203 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 13:29:12,244 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 13:29:12,247 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 13:29:12,249 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 13:29:56,318 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 13:29:56,321 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 13:29:56,323 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 13:29:59,652 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:29:59,695 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:29:59,734 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:31:14,933 [Worker-29: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:31:14,975 [Worker-29: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 13:31:15,013 [Worker-29: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:11:58,590 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:11:58,597 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:11:58,599 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:12:06,350 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:12:06,352 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:12:06,354 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:12:53,762 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:12:53,765 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:12:53,766 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:13:32,718 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:13:32,720 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:13:32,721 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:15:42,954 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:15:42,959 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:15:42,960 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:16:16,166 [Worker-27: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:16:16,207 [Worker-27: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:16:16,246 [Worker-27: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:33:15,785 [Worker-31: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:33:15,825 [Worker-31: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:33:15,864 [Worker-31: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:34:24,457 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:34:24,460 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:34:24,462 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:34:26,304 [Worker-31: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:34:26,343 [Worker-31: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:34:26,382 [Worker-31: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:36:57,986 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:36:57,990 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:36:57,992 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:37:15,187 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:37:15,190 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:37:15,191 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:37:57,686 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:37:57,688 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:37:57,690 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:38:06,375 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:38:06,378 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:38:06,380 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:41:37,604 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:41:37,613 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:41:37,614 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:42:48,200 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:42:48,202 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:42:48,204 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:44:45,770 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:44:45,772 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:44:45,774 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:44:48,753 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:44:48,756 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:44:48,757 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:45:11,799 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:45:11,802 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:45:11,804 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources
+2025-03-07 14:45:11,862 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:45:11,901 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:45:11,941 [Worker-23: Launching SpringBootTest - SpringBootTestApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/BookSpringProject: com.uplus:BookSpringProject:0.0.1-SNAPSHOT with classifier null to /BookSpringProject/target/classes
+2025-03-07 14:51:48,741 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-03-07 14:51:48,744 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-03-07 14:51:48,745 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\uplus\workspace\SpringBootTest\src\test\resources

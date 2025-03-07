@@ -1,6 +1,8 @@
 package com.uplus.eureka.member.model.dto;
 
-public class MemberException extends RuntimeException {
+import com.uplus.eureka.EurekaException;
+
+public class MemberException extends EurekaException {
 	public MemberException(String msg) {
 		super(msg);
 	}
