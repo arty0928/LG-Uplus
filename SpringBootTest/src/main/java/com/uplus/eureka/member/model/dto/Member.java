@@ -9,9 +9,16 @@ public class Member implements Serializable {
 	private String name;
 	private String email;
 	private String address;
-	private String phone;
+	private String phone;	
+	private String withdraw;
 	
 	public Member() {}
+	public String getWithdraw() {
+		return withdraw;
+	}
+	public void setWithdraw(String withdraw) {
+		this.withdraw = withdraw;
+	}
 	public String getId() {
 		return id;
 	}

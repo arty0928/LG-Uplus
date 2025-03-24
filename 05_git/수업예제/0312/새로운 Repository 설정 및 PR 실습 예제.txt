@@ -1,0 +1,78 @@
+1. repository 생성하기 
+   eureka1> 
+   git inti
+   git config --local user.email "이메일"
+   git config --local user.name  "id"
+   
+   리드미 파일 추가 
+   git add .
+   git commit 
+   git branch -M main
+   
+   git remote add origin 주소
+   git push origin main
+   
+   
+    ****Repository가 없다고 오류 발생하는 경우 
+  - github에 token을 통해서만 처리 하도록 설정한 경우
+  - 해결 방법 
+   1. 토큰을 발급 받는다. 
+   2. git remote set-url origin https://<githubtoken>@github.com/<username>/<repositoryname>.git
+   
+2. 템플릿 등록하기  
+    - commit  tamplate
+    .gitmessage.txt 복사하기 
+   git add .
+   git commit 
+
+    - issue template 등록하기 
+    setting> Features 의 Set up template 버튼 클릭하기 
+    
+    request와 bug issu 추가하고 
+    Propose changes 버튼 클릭 후  
+    commit한다. 
+    
+    main branch>.github 디렉토리>issue_template>	bug_report.md
+    											feature_request.md 파일이 추가되었다. 
+    											
+	- 원격에 추가한 템플릿 로칼에 pull 받기 
+	eureka1:main>
+	git pull origin main
+	
+	- .github 디릭토리라 안보인 다면
+	 ls -la
+
+
+3. pull request 템플릿 등록하기 
+    .github > PULL_REQUEST_TEMPLATE.md 파일을 만들어 push한다. 
+    git add .github
+    git commit
+    git push origin main
+
+   	-- 공통 템플릿들이 완료 됐으므로 develop 브랜치 생성하기 
+   	git branch -M develop				-- 현재 main 상태와 같은  branch 생성됨.
+	
+	eureka1:develop>
+    git push origin develop				-- 서버에 develop branch 확인
+   
+4. Repository에서 팀원 초대
+   setting > Collaborators > add people 버튼을 클릭하고 초대할 아이디나 이메일을 입력한다. 
+   초대 받은 부계정은 gmail에서 초대에 응한다.    
+
+   프로젝트 생성 및 팀원 등록하기 
+    해당 repository의 project 선택 > New Project 버튼 선택한다. 
+    
+    프로젝트에서 팀원 추가 
+	오른쪽에 … 을 클릭하고 settings를 클릭한다. 
+    Manage access를 선택하고 초대할 사용자의 id를 입력한 후 invite 버튼을 클릭한다.
+
+   
+5. issue 등록하기 
+    project 하단에 start projec를 클릭한다.
+     > +Add item > Create New issue 선택  ==> 부계정에 issue  user부여
+    
+    project에 새 todo로 생성되고,   issue 메뉴에서 확인 할
+    todo에 있는 item을 드레그해서 이동할 수 있다. 
+        
+
+6. 다른 팀원이 초대한 Repository에 가서 부여 받은 기능 완료하고 PR요청 

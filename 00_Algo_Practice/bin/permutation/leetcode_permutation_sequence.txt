@@ -1,0 +1,30 @@
+import java.util.*;
+
+class Solution {
+    public int[] solution(int n, long k) {
+        int[] answer = new int[n];
+        List<Integer> list = new ArrayList<>();
+        
+        for(int i = 1; i <=n; i++){
+            list.add(i);
+        }
+        
+        long[] fac = new long[n + 1];
+        fac[0] = 1;
+        for(int i = 1; i <= n; i++){
+            fac[i] = fac[i-1] * i;
+        }
+        
+        k = k - 1;
+        int count = 0;
+        
+        while(!list.isEmpty()){
+            long num =k / fac[n-1];
+            answer[count++] = list.get((int)num);
+            list.remove((int)num);
+            k = k % fac[n-1];
+            n--;
+        }
+        return answer;
+    }
+}

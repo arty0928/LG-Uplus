@@ -22,9 +22,11 @@ public class MemberServiceImp implements MemberService {
 			Member user = dao.search(id);
 			System.out.println(user);
 			if(user == null) throw new MemberException("등록되지 않은 아이디입니다.");
+			if(user.getWithdraw().equals("Y")) throw new MemberException("탈퇴한 아이디입니다.");
 			
 			if(!pass.equals(user.getPassword()))
 				throw new MemberException("비밀 번호 오류 발생!!!!");
+			
 			return user;
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -40,6 +42,11 @@ public class MemberServiceImp implements MemberService {
 			if(member == null) {
 				throw new MemberException("요청한 멤버는 등록되지 않은 멤버 정보입니다.");
 			}
+			
+			// 탈퇴한 회원
+			if(member.getWithdraw().equals("Y"))
+				throw new MemberException("이미 탈퇴한 아이디입니다.");
+			
 			return member;
 		}catch(SQLException e) {
 			throw new MemberException("맴버 정보 조회 중 오류 발생");
