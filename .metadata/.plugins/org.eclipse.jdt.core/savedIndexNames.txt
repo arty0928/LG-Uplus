@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.134+C:\uplus\workspace\.metadata\.plugins\org.eclipse.jdt.core
 3371000029.index
 2659801392.index
@@ -79,7 +80,9 @@ INDEX VERSION 1.134+C:\uplus\workspace\.metadata\.plugins\org.eclipse.jdt.core
 665693059.index
 1896463119.index
 4249048404.index
+=======
+INDEX VERSION 1.134+C:\uplus\workspace1\.metadata\.plugins\org.eclipse.jdt.core
+>>>>>>> 0c469752fd751b82130b1c389d4594ef8fc2b9aa
 1865797976.index
-2850942651.index
-2559043015.index
-161924244.index
+782529628.index
+1137126736.index
