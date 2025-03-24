@@ -1,0 +1,46 @@
+http://bit.ly/3SVgCex
+
+
+1. 모든 버튼들을 오토레이아웃(Shift + A) 상태로 만들고 
+   좌우padding을 30, 25, 20으로 설정한다. 
+
+2. 드레그로 전체 선택한 후 Alt + 드레그로 복제한다. 
+
+3. Assets 탭에서 해당 파일을 선택해서 해당 파일의 컴포넌트로 들어가
+  하트 컴포넌틀 드레그로 3개 꺼낸다
+  
+4. 차례대로 하트를 넣고   프레임을 선택하면 간격 조정이 나온다.  
+   큰 하트는 간격을 20
+   중간 하트 크기를 20 간격을 16
+   작은 하트 크기를 16 간격을 12로 설정한다. 
+   
+5. 프레임 이름을 더블 클릭해서 
+    Button  L, M, S, Button_Icon_L , M, S로 지정한다. 
+    
+6. 6개의 버튼을 모두 드레그한 후 오른쪽 상단의 Frame 옆 ◈V 눌러 Create Component Set을 클릭해서
+   베리언트 영역을 만든다.
+   
+   Assets 가서 Component가 추가된 것을 확인한다. 
+
+7. Frame 있던 자리가 Component1로 바뀌로 그 아래 Properties가 생겼다.
+   ◇Property를 클릭해서 size로 입력한다. 
+   
+8. 상하 Button을 선택(한개는 더블클릭 두번째는 Shift 클릭)선택해서 
+   size가 옆에 Mixed를 선택해 Rename을 클릭 후  Large, Medium, Small로 지정한다. 
+   
+9. 왼쪽에서 Component1을 클릭하고 오른쪽에 Properties 옆에 +를 클릭해서 Variant를 추가한다. 
+
+10 이름은 Icon을 지정하고 value는 True로 지정한다.  그러면 default가 True이므로 
+
+11. 두번째 라인의 버튼 3개를 선택한 후 Icon을 선택해 add를 선택 후  False로 지정한다.  
+
+12 Assets에서 버튼을 드래그하면 오른쪽에 베리언드에 size와 Icon이 나온다 값을 변경해 보자
+
+13. 보라색 베리언트 영역을 드레그 해서 확장한다. 
+
+14. 6개의 컴포넌트를 복제 (Alt + 드레그) 하고 색상을 회색으로 한다.
+
+15. 왼쪽에 Component1을 선택하고  오른쪽에 Properties 옆에 +를 클릭해서 Variant를 추가한다.
+
+16 이름은 State로 지정하고 value는 Active로 지정한다.  그러면 default가 Active이므로 
+   아래 6개를 선택해서 Disabled로 설정한다.    
