@@ -1,0 +1,62 @@
+import java.util.*;
+
+class Solution {
+    public int solution(int n, int[][] wires) {
+        int answer = Integer.MAX_VALUE;
+        
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        for(int[] wire : wires){
+            int s = wire[0], e = wire[1];
+            map.putIfAbsent(s, new ArrayList<>());
+            map.putIfAbsent(e, new ArrayList<>());
+            map.get(s).add(e);
+            map.get(e).add(s);
+        }
+        
+        int size = map.size();
+        
+        for(int[] wire : wires){
+            int s = wire[0], e = wire[1];
+            int sidx = map.get(s).indexOf(e);
+            int eidx = map.get(e).indexOf(s);
+            
+            //1. 자르기
+            map.get(s).remove(sidx);
+            map.get(e).remove(eidx);
+            
+            int count = bfs(map, s, n);
+                       
+             //2. 다시 붙이기
+            map.get(s).add(e);
+            map.get(e).add(s);
+            
+            answer = Math.min(answer, Math.abs(n - 2 * count));
+            
+        }
+        
+        return answer;
+    }
+    
+    static int bfs(Map<Integer, List<Integer>> map, int start, int n){
+        Queue<Integer> q = new ArrayDeque<>();
+            q.add(start);
+            int count = 0;
+            boolean[] visited = new boolean[n + 1];
+            visited[start] = true;
+            
+            while(!q.isEmpty()){
+                int now = q.poll();
+                count++;
+                
+                for(int next = 0; next < map.get(now).size(); next++){
+                    int newnode = map.get(now).get(next);
+                    if(!visited[newnode]){
+                        visited[newnode] = true;
+                        q.add(newnode);
+                    }
+                }
+            }
+        
+        return count;
+    }
+}

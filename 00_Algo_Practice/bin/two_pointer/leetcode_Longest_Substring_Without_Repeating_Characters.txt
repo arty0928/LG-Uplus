@@ -1,0 +1,32 @@
+ import java.util.*;
+
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+        Set<Character> set = new HashSet<>();
+        int start = 0, end = 0, answer = 0;
+        int n = s.length();
+
+        while (end < n) {
+            if (!set.contains(s.charAt(end))) {
+                set.add(s.charAt(end));
+                answer = Math.max(answer, end - start + 1);
+                end++;
+            } else {
+                set.remove(s.charAt(start));
+                start++;
+            }
+        }
+
+        return answer;
+    }
+}
+
+[]  
+[a]        start = a,  end = a
+[a,b]      start = a,  end = b
+[a,b,c]    start = a,  end = c  
+             -> end++해서 end = a
+             end가 포함되었으므로 start = a 삭제 후 start ++
+[b,c]      start = b,  end = c
+
+=> end가 n까지 갔다는 소리는 
