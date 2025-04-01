@@ -1,0 +1,14 @@
+주요 extention
+1.	ES7 React/Redux/GraphQL/React-Native snippets 
+2.	Reactjs code snippets
+3.	ESLint
+4.	Prettier - Code formatter
+5.	Path Intellisense
+6.	vscode-styled-components
+7.	React Developer Tools
+8.	Auto Close Tag
+9.	Auto Rename Tag
+10.	Bracket Pair Colorzier
+11.	Live Server
+12.	Tabout
+13.	Indent-rainbow

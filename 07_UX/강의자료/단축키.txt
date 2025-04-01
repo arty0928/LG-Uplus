@@ -1,6 +1,6 @@
 Alt + 드래그			: group 복사
 Shift + A			: 오토레이 아웃 
-Shift + Alt + A		: 오토레이 아웃 해제
+Shift + Alt + A		: 오토레이 아웃
 Ctrl  + R			: rename
 Ctrl  + G			: 그룹화
 Ctrl  + Alt	+ G		: 새로운 프레임을 생성해서 그룹화

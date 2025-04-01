@@ -1,0 +1,51 @@
+1. git에서 token을 불러오기 
+2. 기본 너비는 600*500로 설정할 예정
+3. TodoInsert 만들기 
+  3.1 사각형 툴 530*60, 	fill:gray.600
+  3.2 사각형 툴 70*60 , 	fill:gray.100
+  3.3 Text 툴 bold, 24, Noto Sans KR, 왼쪽 여백 27
+  
+4. TodoListItem  기본 틀 만들기  
+  4.1 Frame 600*75 		fill:gray.200
+  4.2 사각형 툴 600*69 	fill:FFFCFC
+  4.3 Text 툴 ragular 24, Noto Sans KR, 왼쪽 여백 85
+  
+5. Done 상태 TodoListItem  만들기
+  5.1 Frame을 Alt+드레그로 복제
+  5.2 리소스툴(ctrl+k) 에서 material~ 선택해서 check 검색해서 
+      체크된 아이콘을 선택하고 색상은 cyan.500(00BCD4)  35*35
+  5.3 cancel로 검색해서 아이콘 선택하고 색상:red, 35*35
+  5.4 Text는 gray.600으로 설정 
+  5.5 라인 툴(L)로 stroke:gray.600 weight:1
+  
+6. Normal 상태 TodoListItem  만들기
+  6.1 material check 검색해서 체크 안된 아니콘 선택 크기 조절
+  
+7. even TodoListItem  만들기
+  7.1 5번 복제해서 ractangle 선택해서 색상만 gray.100으로 변경하기 
+  7.2 6번 복제해서 ractangle 선택해서 색상만 gray.100으로 변경하기
+   
+8. TodoListItem을 베리언트로 만들기 
+  8.1 4개의 item을 드레그해서 Component set 한다. 
+  8.2 Properties에 state로 변경하고 done, normal로 이름을 변경한다. 
+  8.3 Properties + 로 추가해서 even true로 설정하고, false 도 추가한다. 
+  
+9. 인터랙선 설정하기 
+  9.1 Prototype을 선택한다. 
+  9.2 even=true,done에서 check vector를 선택하고 even=true,nomal로 연결한다. 
+  9.3 even=true,nomarl에서 check vector를 선택하고 even=true,done로 연결한다.
+  9.4 odd도 9.2~9.3 설정을 한다. 
+
+10. 화면 만들기 
+  10.1 새로운 페이지를 추가한다. 
+  10.2 새로운 Frame(F)를 Desktop 1440*1028로 배경색은 #e9ecef로 설정한다. 
+  10.3 새로운 Frame(F)를 600*500, constraints top, center
+  10.4 사각형 툴(R) 600*130, cyan.500
+  10.5 Text를 사각형 툴안에 중앙에 [일정관리] site:48, fill:white, bold, Noto Sans KR
+  10.6 10.4와 10.5를 선택해 Ctrl+G로 설정한다. 
+  10.7 Assets에서 TodoInsert를 드레그해서 Frame1에 넣는다.
+  10.8 새로운 Frame(F)를 600*300으로 설정하고 이름을 TodoList로 설정하고 fill:FFFCFC로 설정한다. 
+  10.9 Assets에서 TodoListItem을 드레그해서 TodoList 프레임에 넣는다.  ==> 3개 정도 
+
+11. prototype을 실행해서 인터렉션을 확인한다.  
+   

@@ -11,13 +11,14 @@ import com.uplus.eureka.book.model.dto.BookException;
 import com.uplus.eureka.book.model.dto.PageBean;
 import com.uplus.eureka.util.PageUtility;
 
+import lombok.AllArgsConstructor;
+
 @Service
+@AllArgsConstructor
 public class BookServiceImpl implements BookService {
 	
 	private BookDao dao;
-	public BookServiceImpl(BookDao dao) {
-		this.dao = dao;
-	}
+
 	@Override
 	public void insert(Book book) {
 		try {

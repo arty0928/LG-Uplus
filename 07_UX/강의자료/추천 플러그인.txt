@@ -1,0 +1,12 @@
+token 			: 피그마에서 선언한 색상을 토큰으로 생성해서 JSON으로 생성해주는 플러그인
+Ainma				: 퍼블리싱 plugin  
+							html/react/vue, tailwindCSS/inlineCss/style component/sass/scss
+							다양한 방법으로 퍼블리싱해준다.  
+Inspect			: 퍼블리싱 plugin  html/jsx, tailwindCSS/inlineCss
+html.to.design	: html을 피그마로 변환하는 플러그인
+Iconify 		: 자주 사용하는 아이콘들을 위한 플러그인
+Material Design Icons: 자주 사용하는 아이콘들을 위한 플러그인
+Unsplash		: 전문 사진작가들이 공유하는 무료 이미지 컬렉션을 제공하는 플러그인
+Content Reel: 더미 텍스트, 아바타이미지, 아이콘, 주소, 전화번호, 이메일 더미 데이터를 바로 적용시켜주는 플러그인
+Lorem Ipsum	: 글자를 자동 생성해주는 플러그인.
+Mapsicle		: 지도 위치를 대략 골라서 Creat map을 누르면 해당 사이즈에 맞춰 이미지 파일로 생성해주는 플러그인
