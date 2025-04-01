@@ -30,14 +30,29 @@
 		변수에 할당하고, 인자로서 받아들이고, 함수로부터 반환할 수 있다.
 
 		*/
+    const user = {
+      firstName : "ureca",
+      lastName : "uplus",
+    };
 
+    const formatName = (params) => {
+      return user.firstName +" " + user.lastName;
+    }
 
-    // const root = ReactDOM.createRoot(document.getElementById("root"));
-    // root.render(
-    //   <StrictMode>
-    //     <App />
-    //   </StrictMode>,
-    // );
+    const Greeting = () => {
+      <!-- return <h1> Hello, {formatName(user) }</h1> -->
+    };
+
+    const App = () => {
+      return <Greeting />;
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(
+      <StrictMode>
+        <App />
+      </StrictMode>,
+    );
 
 
   </script>

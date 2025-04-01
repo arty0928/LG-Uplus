@@ -7,8 +7,8 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Document</title>
 <script>
-  const user1 = { id: 'ssafy1' };
-  const user2 = { id: 'ssafy2' };
+  const user1 = { id: 'ureca1' };
+  const user2 = { id: 'ureca2' };
 
   const users = [user1, user2]
 
@@ -20,13 +20,19 @@
 
   user1.id = 'ureca';
   //console.log로 객체를 출력시 객체의 현재 상태가 출력되지 않고 화면에 표시되기전 최종 변경된 객체가 화면에 출력된다. 
-  console.log(copy1)
+  console.log(copy1);
   
   /* Spread Syntax
     - 객체의 내용을 복사한 새로운 객체가 생성된다.
     - 기존객체에 변경을 해도 반영되지 않는다.
     - 형식]  ...변수명
   */
+  const copy2 = [...users] //... 하면 복제하겠다
+  console.log('user == copy1', users === copy1);
+  console.log('user == copy2', users === copy2);
+  users.push({id : "ureca3"});
+  console.log(copy1);
+  console.log(copy2);
   
   </script>
 </head>

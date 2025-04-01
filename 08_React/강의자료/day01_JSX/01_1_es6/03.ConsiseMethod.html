@@ -28,9 +28,17 @@
             }
         }
         //consise method
-        
-        //user.info();
-        //user2.info();
+        const user2 = {
+                id: 'ssafy',
+                name: '김싸피',
+                age: 7,
+                info() {
+                    console.log('user info:', this.id, ' ', this.name, ' ', this.age)
+                }
+            }
+
+        user.info();
+        user2.info();
     </script>
 </head>
 

@@ -9,7 +9,12 @@ import {속성명, 함수명} from 'url'
     import할 때 객체 이름을 지정해야 한다. 
 
 */
+import cal from './test02_module;';
+let {title , add ,sub } = cal
 
 
 //단 객체로 import 했기 때문에  내부에서 필요한 속성이나 함수를 구조분해 할당 할 수 있다. 
+console.log(title);
+console.log(add(30,20));
+console.log(sub(20,10));
 

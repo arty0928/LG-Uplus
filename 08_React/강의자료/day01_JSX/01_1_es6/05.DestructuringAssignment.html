@@ -9,8 +9,8 @@
     <script>
 
         const user = {
-            id: 'ssafy',
-            name: '김싸피',
+            id: 'ureca',
+            name: '유레카',
             age: 7
         }
 
@@ -32,7 +32,11 @@
             - 형식  {변수명, 변수명} = 객체
 
          */
-       
+        
+        {
+            let {id, name, age} = user;
+            console.log(id, name, age);
+        }
 
         const area = ['서울', '대전', '구미', '부울경', '광주']
 
@@ -46,13 +50,16 @@
             console.log(a1, a2, a3, a4, a5)
         }
         //배열 Destructuring Assignment
-       
+       {
+        const [a1,a2,a3,a4,a5] = area;
+        console.log(a1,a2,a3,a4,a5);
+       }
 
         //객체를 리턴하는 함수 
         function getUser() {
             return {
-                id: 'ssafy',
-                name: '김싸피',
+                id: 'uraca',
+                name: '박은서',
                 age: 7
             }
         }
@@ -68,7 +75,7 @@
 
         //Destructuring Assignment
         {
-           
+           let {id, name, age} = getUser();
         }
     </script>
 </head>
