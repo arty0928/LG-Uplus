@@ -1,0 +1,69 @@
+/*
+    프로그래머스 Network Delay Time
+*/
+
+import java.util.*;
+
+//visited 들 중 가장 큰 것
+class Solution {
+
+    static class Node{
+        int node, time;
+
+        public Node(int node, int time){
+            this.node = node;
+            this.time = time;
+        }
+    }
+
+    public int networkDelayTime(int[][] times, int n, int k) {
+        List<Node>[] graph = new ArrayList[n+1];
+        
+        for(int i = 0; i <= n; i++){
+            graph[i] = new ArrayList<>();
+        }
+
+        for(int[] info : times){
+            int s = info[0], e = info[1], w = info[2];
+
+            graph[s].add(new Node(e, w));
+        }
+
+        int[] visited = new int[n+1];
+        Arrays.fill(visited, Integer.MAX_VALUE);
+        visited[k] = 0;
+        int visitCount = 1;// 방문한 노드 개수
+        int totalTime = 0; //minimum 시간
+
+        //우선 순위 큐 : 거리 순 오름차순 하면 맨 마지막이 visited 중 max
+        Queue<int[]> q = new PriorityQueue<>((a,b) -> a[1] - b[1]);
+        q.add(new int[]{k,0});
+
+        while(!q.isEmpty()){
+            int[] cur = q.poll();
+            int now = cur[0], time = cur[1];
+
+            if(visited[now] < time) continue;
+
+            totalTime = time;
+
+            //연결된 노드 다 가기
+            List<Node> list = graph[now];
+            for(int i = 0 ; i < list.size(); i++){
+                Node next = list.get(i); 
+                //(이미 방문한 노드 < 현재까지 time + next 가기 위한 time ) 확인 x
+                if( visited[next.node] <= time + next.time) continue;
+                
+                //처음 방문 시
+                if(visited[next.node] == Integer.MAX_VALUE) visitCount++;
+
+                visited[next.node] = time + next.time;
+        
+                q.add(new int[]{next. node, time + next.time});
+            }
+
+        }
+
+        return visitCount == n ? totalTime : -1; 
+    }
+}
