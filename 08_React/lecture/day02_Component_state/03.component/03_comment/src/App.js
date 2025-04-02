@@ -20,6 +20,7 @@ react에서 이미지 로딩하기
 
 import React from 'react';
 import Comment from './Comment';
+import Say from '../../../04.state/01_statetest/src/Say_';
 
 const comment = {
   date: new Date(),
@@ -35,6 +36,7 @@ const App = () => {
   return (
     <div>
       <Comment date={comment.date} text ={comment.text} author = {comment.author}></Comment>
+      <Say />
     </div>
   );
 };
