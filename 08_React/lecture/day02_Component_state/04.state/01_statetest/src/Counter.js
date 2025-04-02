@@ -15,9 +15,15 @@ export default class Counter extends Component {
     };
 
     render() {
+        const { count, increase, decrease } = this.props;
     return (
-      <div>
-            <h1>Class Count : {this.state.count}</h1>
+        <div>
+            <h1>Parent Count : {count}</h1>
+            <button onClick={increase}>+</button>
+            <button onClick={decrease}>-</button>
+            
+            <hr />
+            <h1>Child Count : {this.state.count}</h1>
             <button onClick={this.onIncrease}>+</button>
             <button onClick={this.onDecrease}>-</button>
         </div>
