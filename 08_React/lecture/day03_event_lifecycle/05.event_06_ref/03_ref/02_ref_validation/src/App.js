@@ -1,5 +1,6 @@
 import "./App.css";
-import ValidationSample from "./ValidationSample";
+import ScrollBox from "./ScrollBox";
+import ValidationSample from "./ValidationSample_comp";
 // import ScrollBox from './ScrollBox';
 // import { useRef } from "react";
 function App() {
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <ValidationSample />
+      <ScrollBox />
       {/* 
       <ScrollBox ref={ scrollBoxRef } />
       <button onClick={() => {
