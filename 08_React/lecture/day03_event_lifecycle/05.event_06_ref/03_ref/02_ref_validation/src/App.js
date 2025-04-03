@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import "./App.css";
 import ScrollBox from "./ScrollBox";
 import ValidationSample from "./ValidationSample_comp";
@@ -6,16 +7,17 @@ import ValidationSample from "./ValidationSample_comp";
 function App() {
   //함수형 컴포넌트에서는  ref를 훅을 이용해서 사용해야 한다.
   // const scrollBoxRef = useRef(null);
+  
+  const scrollBoxRef = useRef(null);
   return (
     <div className="App">
       <ValidationSample />
-      <ScrollBox />
-      {/* 
-      <ScrollBox ref={ scrollBoxRef } />
+      <ScrollBox ref={scrollBoxRef} />
+      
       <button onClick={() => {
         scrollBoxRef.current.scrollToBottom();
        }
-      }>맨 아래로</button> */}
+      }>맨 아래로</button> 
     </div>
   );
 }

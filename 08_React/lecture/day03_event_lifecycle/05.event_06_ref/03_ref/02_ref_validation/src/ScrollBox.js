@@ -11,7 +11,10 @@ export default class ScrollBox extends Component {
 
   //부모 컴포넌트에서 ref를 통해 호출할 함수
   scrollToBottom = () => {
-  
+    console.log("box", this.box);
+    const { scrollHeight, clientHeight } = this.box;
+    this.box.scrollTop = scrollHeight - clientHeight;
+
   };
 
 
@@ -31,7 +34,11 @@ export default class ScrollBox extends Component {
 
     
     return (
-      <div style={style}>
+      <div style={style}
+        ref={(ref) => {
+          this.box = ref;
+        }}
+        >
         <div style={innerStyle}></div>
       </div>
     )
