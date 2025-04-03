@@ -1,44 +1,69 @@
-import React, { useState } from 'react';
+//rcc, est 클래스
 
-const IterationSample = () => {
-  const [names, setNames] = useState([
-    { id: 1, text: '눈사람' },
-    { id: 2, text: '얼음' },
-    { id: 3, text: '눈' },
-    { id: 4, text: '바람' }
-  ]);
-  const [inputText, setInputText] = useState('');
-  const [nextId, setNextId] = useState(5);
 
-	//state의 객체를 변경할 때는 deep copy 후 변경된 내용을 setState함수를 통해 변경해야 한다.
-  //push()  : 배열에 직접 추가하기 때문에 리액트의 상태 불변성이 깨진다. 
-  //          배열의 내부 데이터만 변경되서 React가 상태 변경을 감지하지 못해서 
-  //          랜더링이 정상적으로 발생하지 않을 수 있다. 
-  //names.push({ id: nextId, text: inputText });
-  //배열.concat() : 기존의 배열을 직접 수정하지 않고 새로운 배열을 생성해서 반환한다.
-     
-   
-   /*
-	  배열.map(callback(currentValue, index, array)
-	          ,[this])
-	  callback
-	    currentValue : 현재 처리하고 있는 요소
-	    index : 현재 처리하고 있는 요소의 index
-	    array : 원보 배열 
-	  this : callback함수에서 사용할 this
-	
-	  key : 
-	    컴포넌트의 배열을 랜더링했을 때 어떤 원소에 변동이 있었는지 알아내기 위한 속성
-	    key는 컴포넌트를 식별할 유일값으로 사용해야 한다. 
-	    없다면 index를 사용하기 
-  */
-  return (
-    <div>
-      <input type='text' value='' onChange='' />
-      <button onClick=''>추가</button>
-      <ul></ul>
-    </div>  
-  );
-};
+import React, { Component } from 'react'
 
-export default IterationSample;
+export default class IterationSample2 extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputText: '',
+      nextId: 5,
+      names : [
+          { id: 1, text: "눈사람" },
+          { id: 2, text: "얼음" },
+          { id: 3, text: "바람" },
+          { id: 4, text: "봄" }
+      ]
+    };
+  }
+
+
+
+  handleChange = (e) => {
+    this.setState({ inputText: e.target.value });
+  }
+
+  handleRemove = (id) => {
+    const newNameList = this.state.names.filter((name) => id != name.id);
+    this.setState({names: newNameList})
+  };
+
+  handleClick = () => {
+    const { names, inputText, nextId} = this.state;
+
+    const newNames = this.state.names.concat({ id: nextId, text: inputText });
+    this.setState({
+      names: newNames,
+      nextId: nextId + 1,
+      inputText: ''
+    });
+  }
+  
+
+  render() {
+    // 구조 분해 할당 : 이렇게 안하면 위의 내용 접근하기 위해서
+    // 계속 this.state.names ~~ 이렇게 접근해야 하니까 불편
+    const { names, inputText} = this.state;
+    
+    const nameList = names.map((name) =>
+      <li
+        key={name.id}
+        onClick={() => {
+          this.handleRemove(name.id);
+        }}>
+        {name.text}
+      </li>
+    
+    );
+
+    return (
+      <div>
+        <input type='text' value={inputText} onChange={this.handleChange}/>
+        <button onClick={this.handleClick}>추가</button>
+        <ul>{nameList}</ul>
+      </div>
+    )
+  }
+}
