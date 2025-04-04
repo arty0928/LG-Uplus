@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      width: 80%;
+      height: 200px;
+      background-color: lightgray;
+    }
+  </style>
+</head>
+<body>
+  <button id="btn">데이타 가져오기</button>
+  <div id="content"></div>
+  <script>
+    //버튼이 클릭되면 비동기 통신 시도
+    document.querySelector('#btn').addEventListener("click", function(){
+      //sendRequest('https://jsonplaceholder.typicode.com/posts/1',null, ajaxHandler,"GET")
+
+      //js에서 기본으로 제공하는 fetch 함수로 비동기 통시 하기 
+      //fetch는 Promise 객체를 리턴한다. 
+      fetch('https://jsonplaceholder.typicode.com/posts/1')
+      .then( response => response.json())  //응답 데이타가 JSON인 경우 .json()를 통해 JSON 객체로 변경해서 리턴
+      .then( info =>{                       //JSON객체를 받아서 화면 처리 
+        console.log(info)
+        let content = `<table>
+                        <tr> <td>userid</td><td>${info.userId}</td> </tr>
+                        <tr> <td>id</td><td>${info.id}</td> </tr>
+                        <tr> <td>title</td><td>${info.title}</td> </tr>
+                        <tr> <td>body</td><td>${info.body}</td> </tr>
+                      </table>
+                      `
+        document.querySelector('#content').innerHTML=content;
+
+      })
+      .catch( err => console.log(err))
+    })    
+
+  </script>
+</body>
+</html>

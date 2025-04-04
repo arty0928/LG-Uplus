@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="httpRequest.js"></script>
+    <style>
+      div {
+        width: 80%;
+        height: 200px;
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">데이타 가져오기</button>
+    <div id="content"></div>
+    <script>
+      document.querySelector("#btn").addEventListener("click", function () {
+        sendRequest("https://jsonplaceholder.typicode.com/posts/1", null, ajaxHandler, "GET");
+      });
+
+      function ajaxHandler() {
+        if (httpRequest.readyState == 4) {
+          if (httpRequest.status == 200) {
+            let jsonData = httpRequest.response;
+            console.log(jsonData);
+
+            let info = JSON.parse(jsonData);
+            let content = `<table>
+                            <tr><td>userid</td><td>${info.userid}</td></tr>
+                            <tr><td>id</td><td>${info.id}</td></tr>
+                            <tr><td>title</td><td>${info.title}</td></tr>
+                            <tr><td>body</td><td>${info.body}</td></tr>
+                          </table>
+                          `;
+            document.querySelector("#content").innerHTML = content;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
