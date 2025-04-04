@@ -36,7 +36,7 @@ state = {
 };
 
     validated = () => {
-        if (this.state === '' || this.state.password.length < 8) {
+        if (this.state.password === '' || this.state.password.length < 8) {
             alert('비밀번호를 8자리 이상 입력하세요');
             this.inputPw.current.focus();
             return false;
