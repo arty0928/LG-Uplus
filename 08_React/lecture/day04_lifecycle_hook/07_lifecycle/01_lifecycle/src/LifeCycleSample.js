@@ -14,6 +14,19 @@ import React, { Component } from "react";
  * 서버 실행하기
  * serve -s build         http://localhost:3000 으로 접속할 수 있다.
  */
+
+/*
+  1. 각 라이프 사이클 메서드를 실행할 때마다 콘솔 디버거에 기록하고,
+     부모 컴포넌트에서 props로 색상을 받아 버튼을 누르면 state.number 값 + 1
+  
+  2. getDerivedStateProps는 부모에게서 받은 color 값을 state에 동기화
+     getSnapshotBeforeUpdate는 DOM에 변화가 일어나기 직전의 색상 속성을 snapshot 값으로 반환,
+     이것을 componentDidUpdate에서 조회
+  
+  3. shouldComponentUpdate 메서드에서 state.number 값의 마지막 자리 수가 4이면
+     리렌더링 취소
+
+*/
 class LifeCycleSample extends Component {
   state = {
     number: 0,
@@ -59,6 +72,10 @@ class LifeCycleSample extends Component {
     return nextState.number % 10 !== 4;
   }
 
+  /*
+    컴포넌트를 DOM 에서 제공
+    - ComponentDidMount에서 등록한 이벤트, 타이머, 직접 생성한 DOM 이 있다면 여기서 제거
+  */
   componentWillUnmount() {
     console.log("componentWillUnmount");
   }
