@@ -50,10 +50,10 @@ const Info = () => {
       <h1 className="title">User List</h1>
       <ul className="user-list">
         {users.map((user) => (
-          <li key="" className="user-item">
-            <span className="user-name"></span>
+          <li key={user.id} className="user-item">
+            <span className="user-name">{ user.name} </span>
             <br />
-            <span className="user-email"></span>
+            <span className="user-email">{ user.email} </span>
           </li>
         ))}
       </ul>
