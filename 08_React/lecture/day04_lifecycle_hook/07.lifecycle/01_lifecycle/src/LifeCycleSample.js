@@ -107,6 +107,10 @@ class LifeCycleSample extends Component {
           // this.props.missing.value
         }
         <h1 style={style} ref={(ref) => (this.myRef = ref)}>
+          {
+            //this.props.missing.value는 없기 때문에 에러 발생 => 일부로 error 발생 시키기
+            // console.log(this.props.missing.value) //이거 주석 처리하면 [ 숫자 증가 / 색상 변경 ] 인 부모 컴포넌트 나옴
+          }
           {this.state.number}
         </h1>
         <p>color: {this.state.color}</p>
