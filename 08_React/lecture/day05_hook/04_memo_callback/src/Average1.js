@@ -7,7 +7,7 @@
       array : reduce를 시작한 배열 
 */
 
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useState } from 'react';
 
 /*
   render 함수에서 호출되고 있기 때문에 list가 변하지 않았는데도 
@@ -32,26 +32,10 @@ const Average = () => {
   
   // input으로 입력 받은 데이터를 저장하는 list ==> 평균을 구할 대상
   const [list, setList] = useState([]);
+
   //input 양식과 양방향 binding할 
   const [number, setNumber] = useState("");
 
-  /*
-    useMemo(Callback, [state])
-    - 처음에 한번 수행되고, state가 변했을 때만 callback이 호출되어 다시 계산
-    - component 내에서 state에 대한 계산 처리를 할 때 변경됐을 때만 다시 계산하고
-      변경되지 않은 경우에만 기존의 값을 재사용
-    - 처음에 한번 수행되고, state가 변했을 때만 callback이 호출되어 다시 계산한다.
-  */
-  const avg = useMemo(() => getAverage(list), [list]);
-  const prevOnChange = useRef();
-  const prevOnClick = useRef();
-
-  /*
-    react 에서는 함수형 Component는 렌더링될 때마다 컴포넌트 함수를 실행시키므로
-    onChange, onClick 함수는 렌더링될 때마다 매번 생성
-
-    ==> useCallBack 사용해야 한다.
-  */
   const onChange = (e) => {
     setNumber(e.target.value);
   };
@@ -60,13 +44,9 @@ const Average = () => {
     const nextList = list.concat(parseInt(number))
     setList(nextList)
     setNumber("");
-  };
+  }
   
-  console.log("onChange : ", prevOnChange.current === onChange);
-  console.log("onClick : ", prevOnClick.current === onChange);
-  prevOnChange.current = onChange;
-  prevOnClick.current = onClick;
-
+  
   return (
     <div>
       <input value={number} onChange={onChange} />
@@ -77,7 +57,7 @@ const Average = () => {
         ))}
       </ul>
 
-      <div> 평균값 : {avg} </div>
+      <div> 평균값 : {getAverage(list)} </div>
 
     </div>
   );
