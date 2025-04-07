@@ -7,7 +7,7 @@
       array : reduce를 시작한 배열 
 */
 
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useCallback, useMemo, useRef, useState } from 'react';
 
 /*
   render 함수에서 호출되고 있기 때문에 list가 변하지 않았는데도 
@@ -52,9 +52,20 @@ const Average = () => {
 
     ==> useCallBack 사용해야 한다.
   */
-  const onChange = (e) => {
+  
+  /**
+    useCallBack(callback)
+    - callback 함수를 재사용
+    - 렌더링 성능을 최적화할 때 사용
+    - useCallBack (callback, []) : 컴포넌트가 처음 렌더링될 때만 함수 생성
+    - useCallBack (callback, [state]) : 지정한 state가 변경될 때만 함수 생성
+
+  */
+  const onChange = useCallback((e) => {
     setNumber(e.target.value);
-  };
+  },
+    [list]
+  );
 
   const onClick = (params) => {
     const nextList = list.concat(parseInt(number))
