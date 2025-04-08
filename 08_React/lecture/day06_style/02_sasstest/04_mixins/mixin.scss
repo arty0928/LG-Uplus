@@ -1,7 +1,13 @@
 /*
-재사용 가능한 스타일의 그룹을 정의하는 사용. 
+<mixin>
+: 재사용 가능한 스타일의 그룹을 정의하는 사용. 
+- Sass에서는 반복되는 스타일을 @mixin으로 정의해서 코드의 재사용성과 유지보수성을 높일 수 있음
+
 선언 형식]  @mixin 이름 { }
 사용 형식]  @include 이름;    -- 해당 mixin이 상용구처럼 추가된다. 
+
+@mixin	스타일 재사용용 블록 정의 
+@include	mixin을 포함시켜 실제 스타일로 반영
 
 
 -함수 형식 ] 인자를 전달 받아 유연한 스타일링을 할 수 있다. 
@@ -13,3 +19,32 @@
 
 @include 이름($인자명:값);    //인자가 여러개 일때 인자는 이름 기반으로 인자 전달
 */
+
+@mixin theme($theme: Darkgray){
+  background-color: $theme;
+  box-shadow: 5px 5px 1px rgba($theme, 0.25);
+  color: white;
+}
+
+@mixin box{
+  height: 50px;
+  width: 100px;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+.info{
+  @include theme;   //Darkgray
+  @include box;
+}
+
+.alert{
+  @include theme(DarkRed); //Darkgray
+  @include box;
+}
+
+.success{
+  @include theme($theme: DarkGreen); //Darkgray
+  @include box;
+}
+
