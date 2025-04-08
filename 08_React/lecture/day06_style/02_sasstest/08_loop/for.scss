@@ -15,8 +15,21 @@ each   : 리스트나 맵을 반복
 each $변수명 in list/map{}
 */
 
+@for $i from 1 through 3{
+  .btn-#{$i} {
+    font-size: #{$i * 4}px;
+  }
+}
+
+
 //리스트
 $colors: red, blue, green;
+
+@each $color in $colors {
+  .text-#{$color}{
+    color: $color;
+  }
+}
 
 //맵
 $simentic: (
@@ -24,3 +37,9 @@ $simentic: (
   success: #198754,
   danger: #dc3545,
 );
+
+@each $name, $value in $simentic {
+  .bg-#{$name} {
+    background-color: $value;
+  }
+}
