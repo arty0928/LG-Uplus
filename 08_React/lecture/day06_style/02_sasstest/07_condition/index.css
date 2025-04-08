@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*
+조건문(@if, @else if, @else)
+주어진 조건에 따라 다른 스타일을 적용할 때 사용 – ex) theme
+*/
+/*light로 바꾸면 css 내용도 바뀜 */
+.button {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: gray;
+  color: whitecd;
+  border: 1px solid black;
+}
+
+/*# sourceMappingURL=index.css.map */
