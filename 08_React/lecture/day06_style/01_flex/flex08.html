@@ -25,7 +25,7 @@
         /* auto는 기본 값이며 item의  width, height를 유지
                item에 width, height가 지정되어 있지 않는 경우 item content 크기에 fit
             */
-        flex-basis: auto;
+        /* flex-basis: auto; */
 
         /* 0으로 설정하면 
                width, height가 설정 없는 경우 : item content 크기에 fit
@@ -38,26 +38,25 @@
         /* % : 컨테이너 크기의 %로 표시됨
                지정한 크기는 무시됨.
             */
-        /* flex-basis: 50%; */
+        flex-basis: 50%;  /*이러면 넘쳐서 wrap 해서 안 넘게 */
 
         /* 
                 px로 크기 지정
                 item에 크기가 설정된 경우 
-                    content가 지정한 크기보다 작은 경우  : flex-basis로 지정한 크기
-                    content가 지정한 크기보다 큰 경우    : item 크기 
+                    content < 지정한 크기  : flex-basis로 지정한 크기
+                    content > 지정한 크기  : item 크기 
 
                 item에 크기가 설정되지 않은 경우
-                    content가 지정한 크기보다 작은 경우  : flex-basis로 지정한 크기
                     content가 지정한 크기보다 큰 경우    : item의 컨텐츠에 fit
             */
         /* flex-basis: 50px; */
         /* flex-basis: 10rem; */
 
         /* content 크기에 fit */
-        /* flex-basis: content; */
+        flex-basis: content;
       }
       div {
-        width: 100px;
+        width: 80px;
         /* height: 100px; */
       }
       .hello {

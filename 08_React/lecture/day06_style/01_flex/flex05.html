@@ -13,12 +13,12 @@
         flex-flow: row nowrap;
         height: 500px;
         /* flex-direction: column; */
-        /* flex-direction: row; */
+        flex-direction: row; 
 
         /* 
             정렬 : 
             justify-content: 메인 축 방향 정렬  
-            align-items : cross 축 방향 정렬
+            align-items : cross 축 방향 정렬   
         */
 
         /* 아이템을 시작점으로 정렬  flex-direction이 row일때 왼쪽, column일때는 위 */
@@ -44,15 +44,15 @@
         justify-content: space-evenly;
 
         /* 아이템들이 수직축 방향으로 끝까지 쭈욱 늘어납니다. */
-        align-items: stretch;
+        /* align-items: stretch; */
         /* align-items: flex-start; */
         /* align-items: flex-end; */
         /* align-items: center; */
-        /* align-items: baseline; */
+        align-items: baseline;
       }
       div {
         width: 100px;
-        height: 100px;
+        /* height: 100px; */
       }
       .hello {
         background: green;
