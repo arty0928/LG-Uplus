@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 
 변 수(Variables)
@@ -8,11 +9,4 @@ CSS의 값을 저장하고 재사용하는 방법
 
 */
 
-$font-stack : Helvetica, sans-serif;
-$primary-color : #333;
-
-body{
-    font: $font-stack;
-    color: $primary-color;
-    
-}
+/*# sourceMappingURL=index.css.map */
