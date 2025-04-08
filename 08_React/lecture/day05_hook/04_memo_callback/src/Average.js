@@ -17,6 +17,14 @@ import React, { useCallback, useMemo, useRef, useState } from 'react';
   ==> useMemo로 변경됐을 때만 호출되게 수정
 */
 
+/*
+"React에서 상태가 유지되는 원리"
+"초기 렌더링과 리렌더링 시 State 처리 과정"
+
+  리액트 내의 state라는 큐가 있고, 처음 렌더링할 때 state q에 아무값이 없으니 초기값으로 초기화하고,
+  리렌더링하면 state q에 값이 있는지 확인하고 state q에 있는 값을 가져다 씀 -> state 유지
+*/ 
+
 const getAverage = (numbers) => {
   if (numbers.length === 0) return 0;
   if (numbers.length === 1) return numbers[0];
