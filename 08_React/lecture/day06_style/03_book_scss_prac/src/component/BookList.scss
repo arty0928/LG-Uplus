@@ -1,0 +1,17 @@
+@use "../style/base" as base;
+
+.book{
+    &-table{
+        width: 50%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    &-header{
+        background-color: base.$secondary-color;
+        font-weight: bold;
+        text-align: center;
+        @include base.boarder;
+        height: 50px;
+    }
+}
