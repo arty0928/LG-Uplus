@@ -9,12 +9,19 @@ const TodoInsert = () => {
     const onChange= (e) => {
         setValue(e.target.value);
     }
+
+    const onClick = (e) => {
+        e.preventDefault();
+        console.log(value);
+        setValue("");
+    }
+    
     
 
     return (
         <form className="TodoInsert">
         <input placeholder="할 일을 입력하세요" value={value} onChange={onChange} />
-        <button type="submit">
+        <button  onClick={onClick}>
             <MdAdd />
         </button>
         </form>
