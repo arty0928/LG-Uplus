@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { MdAdd } from 'react-icons/md';
 
 
@@ -6,17 +6,17 @@ import { MdAdd } from 'react-icons/md';
 const TodoInsert = () => {
     const [value, setValue] = useState("");
 
-    const onChange= (e) => {
+    const onChange = useCallback((e) => {
         setValue(e.target.value);
-    }
+    }, [value]
+    );
 
-    const onClick = (e) => {
+    const onClick = useCallback((e) => {
         e.preventDefault();
         console.log(value);
         setValue("");
-    }
-    
-    
+    }, [value]
+    );
 
     return (
         <form className="TodoInsert">
