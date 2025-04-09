@@ -31,12 +31,34 @@ const App = () => {
     nextId.current += 1;
   }
   
+  const handleToggle = (id) => {
+    setTodos(
+      todos.map((todo) =>
+        todo.id === id ? { ...todo, checked: !todo.checked } : todo
+      )
+    );
+  }
+
+  const onRemove = (id) => {
+    setTodos(
+      todos.filter((todo) => {
+        return todo.id !== id;
+      }
+      )
+    );
+  }
+  
+  
 
   return (
-    <TodoTemplate>
-      <TodoInsert onInsert = {handleInsert} />
-      <TodoList todos={todos} />
-    </TodoTemplate>
+    <div className="App">
+      <div className="container">
+        <TodoTemplate>
+          <TodoInsert onInsert = {handleInsert} />
+          <TodoList todos={todos} onToggle={handleToggle} onRemove={onRemove} />
+        </TodoTemplate>
+      </div>
+    </div>
   );
 };
 
