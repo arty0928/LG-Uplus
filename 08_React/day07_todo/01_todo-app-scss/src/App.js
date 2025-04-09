@@ -1,4 +1,4 @@
-import React , {useState } from "react";
+import React , {useRef, useState } from "react";
 import TodoTemplate from "./components/TodoTemplate";
 import TodoInsert from "./components/TodoInsert";
 import TodoList from "./components/TodoList";
@@ -22,10 +22,20 @@ const App = () => {
     },
   ]);
 
+  const nextId = useRef(4);
+
+  const handleInsert = (text) => {
+    const newTodo = { id: nextId.current, text, checked: false };
+    setTodos([...todos, newTodo]);
+
+    nextId.current += 1;
+  }
+  
+
   return (
     <TodoTemplate>
-      <TodoInsert />
-      <TodoList />
+      <TodoInsert onInsert = {handleInsert} />
+      <TodoList todos={todos} />
     </TodoTemplate>
   );
 };

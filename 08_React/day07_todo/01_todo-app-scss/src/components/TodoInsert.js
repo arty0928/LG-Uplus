@@ -1,9 +1,8 @@
 import React, { useCallback, useState } from 'react';
 import { MdAdd } from 'react-icons/md';
 
-
-
-const TodoInsert = () => {
+// 부모 컴포넌트에서 onInsert 라는 이름의 props 넘겨줌
+const TodoInsert = ({onInsert }) => {
     const [value, setValue] = useState("");
 
     const onChange = useCallback((e) => {
@@ -14,6 +13,9 @@ const TodoInsert = () => {
     const onClick = useCallback((e) => {
         e.preventDefault();
         console.log(value);
+        if (value.trim() === "") return;
+
+        onInsert(value);
         setValue("");
     }, [value]
     );
