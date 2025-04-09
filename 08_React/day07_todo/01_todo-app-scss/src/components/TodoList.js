@@ -1,9 +1,10 @@
 import React from 'react';
 import TodoListItem from './TodoListItem';
+import './TodoList.scss'
 
 const TodoList = ({todos, onToggle, onRemove}) => {
     return (
-        <div>
+        <div className='TodoList'> 
             {todos.map((todo) => {
                 return (
                     <TodoListItem

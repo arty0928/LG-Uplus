@@ -1,9 +1,15 @@
+@use '../style/base' as base;
+
 .TodoListItem {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    border-top: 1px solid base.$basic-change-color;
 
+    &:nth-child(even){
+        background-color: #eee;
+    }
     .checkbox{
         display: flex;
         align-items: center;
@@ -14,18 +20,19 @@
             font-size: 1.125rem;
 
             &.checked {
-                    color: #adb5bd;
+                    color: base.$basic-change-color;
                     text-decoration: line-through;
                 }
         }
-
-        
+        &.checked{
+            color: base.$primary-color;
+        }
     }
 
     .remove{
         color: red;
         cursor: pointer;
         margin-left: 1rem;
-        
     }
+
 }

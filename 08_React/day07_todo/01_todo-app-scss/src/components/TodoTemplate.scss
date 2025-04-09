@@ -1,9 +1,26 @@
+@use '../style/base' as base;
+
 .TodoTemplate{
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    gap: 10px;
+    width: 512px;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 4px; 
+    overflow: hidden;
+    background-color: base.$netural-color;
+
+    .app-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+
+        font-weight: bold;
+        font-size: 1.5rem;
+        color : base.$netural-color;
+        background: base.$primary-color;
+    }
+    
 }
+

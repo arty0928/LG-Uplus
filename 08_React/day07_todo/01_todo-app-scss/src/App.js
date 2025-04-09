@@ -2,6 +2,7 @@ import React , {useRef, useState } from "react";
 import TodoTemplate from "./components/TodoTemplate";
 import TodoInsert from "./components/TodoInsert";
 import TodoList from "./components/TodoList";
+import './App.css';
 
 const App = () => {
   const [todos, setTodos] = useState([
