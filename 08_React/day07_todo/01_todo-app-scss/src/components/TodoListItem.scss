@@ -1,0 +1,31 @@
+.TodoListItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+
+    .checkbox{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .text{
+            margin-left: 0.5rem;
+            font-size: 1.125rem;
+
+            &.checked {
+                    color: #adb5bd;
+                    text-decoration: line-through;
+                }
+        }
+
+        
+    }
+
+    .remove{
+        color: red;
+        cursor: pointer;
+        margin-left: 1rem;
+        
+    }
+}
