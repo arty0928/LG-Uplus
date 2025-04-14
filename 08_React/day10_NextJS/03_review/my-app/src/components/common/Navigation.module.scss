@@ -1,0 +1,42 @@
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.nav{
+
+ background-color: pink;
+ padding: 1rem;
+ padding-left: 50px;
+ border: 1px solid #ddd;
+ display: flex;
+ justify-content: space-between;
+ width: 100%;
+}
+.menu{
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.menu_item{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.menu_item:hover{
+    color: deeppink;
+}
+
+.login{
+    list-style-type: none;
+    margin-left: auto;
+}
