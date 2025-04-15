@@ -1,14 +1,16 @@
 "use client";
 import styles from "@/app/books/book.module.scss";
+import BookItem from "@/components/books/BookItem";
 
 export default function Books() {
+  console.log("bbok");
   const books = [
     {
       isbn: "9917-1",
       title: "처음하는 리액트",
       author: "ureca",
       price: 30000,
-      description: "",
+      describ: "",
       img: "domain.jpg",
     },
   ];
@@ -34,7 +36,10 @@ export default function Books() {
             <th>가격</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody>
+          {books.map((book) => <BookItem key={book.isbn} book = {book}></BookItem>  )}
+
+        </tbody>
       </table>
 
       <div className={styles.pagination}>

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import styles from "./Navbar.module.scss";
-import urecaLogo from "@/assets/images/ureca_logo.png";
+// 패키징된 이미지를 client에서 랜더링할 때 src걍러 하위에 있는 이미지를 import해서 가져오기
+// import urecaLogo from "@/assets/images/ureca_logo.png";
 export default function Navbar() {
-  console.log(urecaLogo);
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <img src={urecaLogo.src} alt="Logo" width={100} />
+        <img src="/assets/images/ureca_logo.png" alt="Logo" width={100} />
       </div>
       <ul className={styles.navLinks}>
         <li>
