@@ -92,8 +92,14 @@
           img: document.getElementById("img").value,
         };
 				
-        const API_BASE_URL = "http://localhost:8080/eureka/book"
-        
+        const API_BASE_URL = "http://10.4.2.100:8080/eureka/book"
+        axios.post(API_BASE_URL, bookData)
+        .then((Response) => {
+          console.log(Response);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
       }
     </script>
   </body>
