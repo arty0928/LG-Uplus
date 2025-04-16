@@ -56,9 +56,22 @@
         const key = document.getElementById("key").value;
         const word = document.getElementById("word").value.trim();
         const params = { key, word, pageNo: 1 };
-        const API_BASE_URL = "http://localhost:8080/eureka/book";
+        const API_BASE_URL = "http://10.4.2.100:8080/eureka/book";
         
         try {
+          const response = await axios.get(API_BASE_URL,{params});
+          const books = response.data.books;
+          console.log(books);
+          if(!Array.isArray(books) || books.length == 0){
+            resultEl.textContent = "도서 정보가 없습니다";
+            return;
+          }
+          resultEl.innerHTML = "";
+          const html = books.map((book) =>{
+            const content = document.createElement('div');
+            content.textContent = JSON.stringify(book);
+            resultEl.append(content);
+          })
          
         } catch (error) {
           console.error(error);

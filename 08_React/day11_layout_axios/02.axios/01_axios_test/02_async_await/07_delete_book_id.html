@@ -25,10 +25,27 @@
 
     <pre id="result">결과가 여기에 표시됩니다</pre>
     <script>
-    	async function fetchData() {
+    	
+      const result = document.getElementById("result");
+
+      async function fetchData() {
         const isbn = document.getElementById("isbn").value;
-        const API_BASE_URL = "http://localhost:8080/eureka/book";
+        const API_BASE_URL = "http://10.4.2.100:8080/eureka/book";
         try {
+          const isbn = document.getElementById("isbn").value;
+          const response = await axios.delete(`${API_BASE_URL}/${isbn}`);
+          console.log(response.data);
+          alert("삭제 성공");
+          
+          const getResponse = await axios.get(API_BASE_URL);
+          const data = getResponse.data.books;
+          console.log(data);
+
+          result.textContent = "";
+          data.map((res) => {
+            result.textContent += JSON.stringify(res);
+          })
+
             
         } catch (error) {
           alert("삭제 중 오류가 발생했습니다.");
