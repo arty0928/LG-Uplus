@@ -32,7 +32,13 @@ export default function BookMarks() {
                 </tr>
                 </thead>
                 <tbody>
-                    {books.map((book) => <BookMarkItem key={book.isbn} book={book}/>)}
+                    {books.length > 0 ? (
+                        books.map((book) => <BookMarkItem key={book.isbn} book={book}></BookMarkItem>)
+                    ) : (
+                        <tr>
+                            <td colSpan={6} style={{textAlign:"center", padding: "2rem"}}>북마크 내용이 비었습니다.</td>
+                        </tr>                            
+                    )}
                 </tbody>
             </table>
 

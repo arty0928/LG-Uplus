@@ -6,3 +6,7 @@ export interface Book {
   describ: string;
   img: string;
 }
+
+export interface BookProps {
+  book: Book;
+}

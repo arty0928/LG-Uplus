@@ -1,10 +1,8 @@
 import "./BookItem.scss";
-import { Book } from "@/types/book";
 import Link from "next/link";
-interface Props {
-  book: Book;
-}
-const BookItem = ({ book }: Props) => {
+import { BookProps } from "@/types/book";
+
+const BookItem = ({ book }: BookProps) => {
   return (
     <tr className="book-row" key={book.isbn}>
       <td>

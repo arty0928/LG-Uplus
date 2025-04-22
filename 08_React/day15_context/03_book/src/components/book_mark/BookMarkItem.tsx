@@ -1,18 +1,18 @@
 "use client";
 
 import { useBookMarkContext } from '@/store/book-mark';
-import { Book } from '@/types/book';
+import { Book, BookProps } from '@/types/book';
 import Link from 'next/link';
 import React, { useCallback } from 'react'
 
-export default function BookMarkItem({book} : {book : Book}) {
+export default function BookMarkItem({book} : BookProps) {
 
-  const { books, remove } = useBookMarkContext();
+  const { remove } = useBookMarkContext();
 
   const handleBookMarkRemove = useCallback(() => {
     remove(book.isbn);
     alert("선택한 북마크가 삭제되었습니다.");
-  }, [books]);
+  }, [book]);
   
 
   return (
