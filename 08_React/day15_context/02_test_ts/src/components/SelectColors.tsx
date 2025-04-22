@@ -4,7 +4,7 @@ import { useColorContext } from "../store/color";
 const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
 
 const SelectColors = () => {
-  const { changeColor, changeSubColor } = useColorContext();
+  const { changeColor, changeSubcolor } = useColorContext();
 
   const handleSetColor = useCallback(
     (color: string) => {
@@ -15,9 +15,9 @@ const SelectColors = () => {
 
   const handleSetSubcolor = useCallback(
     (subcolor: string) => {
-      changeSubColor(subcolor);
+      changeSubcolor(subcolor);
     },
-    [changeSubColor],
+    [changeSubcolor],
   );
 
   return (
