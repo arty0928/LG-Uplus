@@ -21,9 +21,15 @@ export default function Navbar() {
         <li>
           <Link href="/books">도서정보</Link>
         </li>
+        <li>
+          <Link href="/member/check">사용자 정보 확인</Link>
+        </li>
       </ul>
       <div className={styles.search}>
         <button>로그인</button>
+        <Link href="/member">
+          <button>회원가입</button>
+        </Link>
       </div>
     </nav>
   );

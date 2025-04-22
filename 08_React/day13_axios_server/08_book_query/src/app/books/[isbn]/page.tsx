@@ -53,8 +53,11 @@ export default function BookDetail({ params: { isbn } }: { params: { isbn: strin
   const removeMutation = useMutation({
     mutationFn: (isbn: string) => removeBook(isbn),
     onSuccess: () => {
-      alert('삭제 성공')
-      queryClient.invalidateQueries({ queryKey: ["book", isbn] });
+      alert('삭제 성공');
+      // update에서는 해당 book만 갱신하므로 book을 넘겨줬음
+      // remove는 갱신 대상이 book이 아니라 books 목록 이므로 books
+      queryClient.invalidateQueries({ queryKey: ["books"] });
+      router.push("/books");
     },
     onError: () => {
       alert("삭제 실패");
@@ -92,19 +95,10 @@ export default function BookDetail({ params: { isbn } }: { params: { isbn: strin
     setIsEditMode(!isEditMode);
   }, [isEditMode, isbn]);
 
+
   const handleRemove = useCallback(async () => {
     console.log("도서 목록으로 이동");
-    // const { data, error } = await handleApi(() => removeBook(isbn));
-    
-    // if (data) {
-    //   alert("삭제 성공!!");
-    //   router.push("/books");
-    // } else if (error) {
-    //   // setError(error);
-    // }
     removeMutation.mutate(isbn);
-    router.push("/books");
-    // 목록 이동 로직
   }, [isbn]);
 
   //////////////////////todo3. loading, error에 대한 화면
