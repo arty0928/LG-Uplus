@@ -1,24 +1,48 @@
 "use client";
 
-// <div className={styles.bookList}>
-//   <table className={styles.table}>
-//     <thead>
-//       <tr>
-//         <th>이미지</th>
-//         <th>책 일련 번호</th>
-//         <th>제목</th>
-//         <th>저자</th>
-//         <th>가격</th>
-//         <th>비고</th>
-//       </tr>
-//     </thead>
-//     <tbody>
+import React, { useCallback } from 'react'
+import styles from './book_mark.module.scss';
+import { useBookMarkContext } from '@/store/book-mark';
+import BookMarkItem from '@/components/book_mark/BookMarkItem';
 
-//     </tbody>
-//   </table>
+export default function BookMarks() {
 
-//   <div className={styles.pagination}>
-//     <button>이전</button>
-//     <button>다음</button>
-//   </div>
-// </div>
+    const { books, removeAll } = useBookMarkContext();
+
+    const handleRemoveAllBookMark = useCallback(() => {
+        alert("모두 삭제되었습니다.");
+        removeAll();
+    }, [books]);
+
+    return (
+
+        <div className={styles.bookList}>
+            <div className={styles.pagination}>
+                <button className='' onClick={handleRemoveAllBookMark}>모두 삭제</button>
+            </div>
+            <table className={styles.table}>
+                <thead>
+                <tr>
+                    <th>이미지</th>
+                    <th>책 일련 번호</th>
+                    <th>제목</th>
+                    <th>저자</th>
+                    <th>가격</th>
+                    <th>비고</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {books.map((book) => <BookMarkItem key={book.isbn} book={book}/>)}
+                </tbody>
+            </table>
+
+            <div className={styles.pagination}>
+                <button>이전</button>
+                <button>다음</button>
+            </div>
+    </div>
+  )
+}
+
+
+

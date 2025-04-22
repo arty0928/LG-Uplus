@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./Navbar.module.scss";
-import urecaLogo from "@/assets/images/ureca_logo.png";
+import urecaLogo from "../../../public/assets/images/ureca_logo.png";
 import { MemberProvider } from "@/store/member";
 import Profile from "../member/Profile";
 export default function Navbar() {

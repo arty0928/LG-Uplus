@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { searchMember, updateMember } from "@/service/member";
 import { Member } from "@/types/member";
+import { useMemberContext } from "@/store/member";
 export default function MemberDetail() {
   const [isEditMode, setIsEditMode] = useState(false);
   const idRef = useRef<HTMLInputElement>(null);
@@ -13,10 +14,29 @@ export default function MemberDetail() {
   const emailRef = useRef<HTMLInputElement>(null);
   const addressRef = useRef<HTMLInputElement>(null);
   const phoneRef = useRef<HTMLInputElement>(null);
-  const [id, setId] = useState("kdg");
+  const [id, setId] = useState<string>("");
   //todo1. store/member 로부터 member를 추출
+  const { member } = useMemberContext();
+  
+  /*
+  
+  무한 re-rendering
+    id state를 "" 값으로 선언한 후 useMemberContext()로 부터 가져온 member정보로
+    id(state)를 변경시키면 re-rendering 조건이 되서 다시 rendering된다
+    ****함수형 컴포넌트이므로 함수 전체가 다시 수행되는데 이때 id를 setId로 다시 변경해서
+    무한 re-rendering된다<div className=""></div>
+    
+    // setId(member?.id) //이러면 무한루프 돈다 -> id가 바뀔때마다 렌더링을 계속 다시 -> id 변경 -> 무한 렌더링 => useEffect 사용해야 함
+    
+    if(member) setId(member.id);
 
+  */
+  
   //todo2. useEffect를 통해 member가 있는 경우 id 상태를 변경한다.
+  useEffect(() => {
+    if (member)
+      setId(member.id)
+  }, [member])
 
   const {
     data: find,

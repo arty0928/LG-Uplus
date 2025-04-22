@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { removeBook, searchBook, updateBook } from "@/service/books";
 import { Book } from "@/types/book";
+import { useBookMarkContext } from "@/store/book-mark";
 export default function BookDetail({ params: { isbn } }: { params: { isbn: string } }) {
   const queryClient = useQueryClient();
   const router = useRouter();
@@ -99,6 +100,16 @@ export default function BookDetail({ params: { isbn } }: { params: { isbn: strin
     deleteMutation.mutate();
   }, [isbn]);
 
+  const { insert } = useBookMarkContext();
+
+  const handleBookMarkInsert = useCallback(() => {
+    if (book) {
+      insert(book);
+      alert("선택한 도서과 북마크에 추가되었습니다.");
+      router.back();
+    }
+  }, [book]);
+
   //////////////////////  로딩/에러 상태
   if (isLoading) return <h1>Loading...</h1>;
   if (error) return <h1>Error: {String(error)}</h1>;
@@ -159,7 +170,7 @@ export default function BookDetail({ params: { isbn } }: { params: { isbn: strin
 
       <div className={styles.buttonGroup}>
         <button onClick={handleUpdate}>{isEditMode ? "저장" : "수정"}</button>
-        <button>북마크</button>
+        <button onClick={handleBookMarkInsert}>북마크</button>
         <button onClick={handleRemove}>삭제</button>
       </div>
     </div>

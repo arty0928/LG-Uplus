@@ -4,7 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import QueryProvider from "@/components/common/QueryProvider";
 import { MemberProvider } from "@/store/member";
-import { BookmarkProvider } from "@/store/book-mark";
+import { BookMarkProvider } from "@/store/book-mark";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,14 +23,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <BookMarkProvider>
         <QueryProvider>
           <MemberProvider>
-            <BookmarkProvider>
               <Navbar />
               {children}
-            </BookmarkProvider>
           </MemberProvider>
         </QueryProvider>
+        </BookMarkProvider>
       </body>
     </html>
   );
