@@ -6,6 +6,7 @@ import { useMutation, useQuery } from "@tanstack/react-query";
 import { searchMember, updateMember } from "@/service/member";
 import { Member } from "@/types/member";
 import { useMemberContext } from "@/store/member";
+
 export default function MemberDetail() {
   const [isEditMode, setIsEditMode] = useState(false);
   const idRef = useRef<HTMLInputElement>(null);

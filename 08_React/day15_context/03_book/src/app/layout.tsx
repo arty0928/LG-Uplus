@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <BookMarkProvider>
+        <BookMarkProvider> {/* 어디에 걸어도 상관X 감싸기만 하면 됌======= */}
         <QueryProvider>
           <MemberProvider>
               <Navbar />
