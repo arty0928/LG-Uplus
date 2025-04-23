@@ -15,15 +15,24 @@ export const MemberProvider = ({ children }: { children: ReactNode }) => {
   const [member, setMember] = useState<Member | null>(null);
   const [loaded, setLoaded] = useState<boolean>(false);
 
+  /* 
+
+    localStorage
+      - removeItem() 으로 삭제하기 전까지 저장
+    
+    sessionStorage
+      - session이 유지 되는 동안 저장    
+
+  */
   useEffect(() => {
-    const store = localStorage.getItem("user");
+    const store = sessionStorage.getItem("user");
 
     if (store) {
       try {
         setMember(JSON.parse(store));
       }
-      catch {
-        setMember(null);
+      catch (e) {
+        console.log(e);
       }
     }
     setLoaded(true);
@@ -37,10 +46,12 @@ export const MemberProvider = ({ children }: { children: ReactNode }) => {
 
   const login = useCallback((member: Member) => {
     setMember(member);
+    sessionStorage.setItem("user", JSON.stringify(member));
   }, []);
 
   const logout = useCallback(() => {
     setMember(null);
+    sessionStorage.removeItem("user");
   }, []);
 
   const returnValue = useMemo(
