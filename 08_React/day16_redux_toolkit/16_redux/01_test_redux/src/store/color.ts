@@ -29,7 +29,7 @@ export default function colorReducer(state = initialState, action: ColorAction):
     case CHANGE_COLOR:
       return {
         ...state,
-        color: action.payload,
+        color: action.payload, 
       };
     case CHANGE_SUBCOLOR:
       return {
@@ -40,3 +40,4 @@ export default function colorReducer(state = initialState, action: ColorAction):
       return state;
   }
 }
+
