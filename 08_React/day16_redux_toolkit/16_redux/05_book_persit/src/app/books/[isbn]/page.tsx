@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { removeBook, searchBook, updateBook } from "@/service/books";
 import { Book } from "@/types/book";
+import { useBookMark } from "@/store/hooks/bookmarkHook";
 
 export default function BookDetail({ params: { isbn } }: { params: { isbn: string } }) {
   const queryClient = useQueryClient();
@@ -92,9 +93,15 @@ export default function BookDetail({ params: { isbn } }: { params: { isbn: strin
     deleteMutation.mutate();
   }, [deleteMutation]);
 
-  //////////TODO 15. 커스텀 훅을 통해 registBookMark 함수를 전달 받기
+  //////////TODO B15. 커스텀 훅을 통해 registBookMark 함수를 전달 받기
+  const { insertBookMark } = useBookMark();
 
-  //////////TODO 16. 북 마크 버튼을 위한 이벤트 함수 작성하기
+  //////////TODO B16. 북 마크 버튼을 위한 이벤트 함수 작성하기
+  const handleAddBookMark = useCallback(() => {
+    if (book) {
+      insertBookMark(book);
+    }
+  }, [book, insertBookMark]);
 
   if (isLoading) return <h1>Loading...</h1>;
   if (error) return <h1>Error: {String(error)}</h1>;

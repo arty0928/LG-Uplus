@@ -12,10 +12,13 @@ const initialState: MemberState = {
 };
 
 //////////TODO M3. slice선언하기 {슬라이스이름, 초기값, reducers}
+// createSlice : action + reducer 상태를 한 번에 정의하는 Redux Toolkit 함수
 const memberSlice = createSlice({
     name: "member",
     initialState,
     reducers: {
+
+        // Action 정의하기 : login, logout 
         login: (state, action: PayloadAction<Member>) => {
             state.member = action.payload;
         },

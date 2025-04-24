@@ -15,7 +15,7 @@
 
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 import memberReducer from "./slices/memberSlice";
-// import bookmarkReducer from "./slices/bookmarkSlice";
+import bookmarkReducer from "./slices/bookmarkSlice";
 import {
   persistStore,
   persistReducer,
@@ -29,10 +29,10 @@ import {
 import storageSession from "redux-persist/lib/storage/session"; // sessionStorage 사용
 import storage from "redux-persist/lib/storage"; // sessionStorage 사용
 
-// const bookmarkPersistConfig = {
-//   key: "bookmark",
-//   storage,
-// };
+const bookmarkPersistConfig = {
+  key: "bookmark",
+  storage,
+};
 
 const memberPersistConfig = {
   key: "member",
@@ -41,7 +41,7 @@ const memberPersistConfig = {
 
 const rootReducer = combineReducers({
   member: persistReducer(memberPersistConfig, memberReducer),
-  // bookmark: persistReducer(bookmarkPersistConfig, bookmarkReducer),
+  bookmark: persistReducer(bookmarkPersistConfig, bookmarkReducer),
 });
 
 export const store = configureStore({
