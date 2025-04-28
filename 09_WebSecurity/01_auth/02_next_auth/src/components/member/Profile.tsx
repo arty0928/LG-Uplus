@@ -14,6 +14,7 @@ export default function Profile() {
   });
   const handleLogin = useCallback(() => {
     //////////// TODO 6.  next-auth에서 제공하는 login 화면으로 인동하기
+    router.push("/api/auth/signin")
   }, []);
 
   const handleLogout = useCallback(() => {
