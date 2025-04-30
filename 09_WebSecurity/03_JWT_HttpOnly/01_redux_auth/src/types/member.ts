@@ -10,7 +10,6 @@ export interface Member {
 export interface Auth {
   accessToken?: string;
   //////////TODO 1. cookie로 유지하므로 삭제하기
-  refreshToken?: string;
   isLoggedIn: boolean;
   id: string;
 }

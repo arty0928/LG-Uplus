@@ -17,22 +17,17 @@ const api = axios.create({
 let localAccessToken = "";
 
 //////////TODO 3. cookie로 유지하므로 삭제하기
-let localRefreshToken = "";
 
 api.interceptors.request.use(async (config) => {
   if (!localAccessToken) {
     const state = store.getState(); // 현재 Redux store 상태 가져오기
     localAccessToken = state.member.memberState?.accessToken; // 토큰 꺼내기
     //////////TODO 4. cookie로 유지하므로 삭제하기
-    localRefreshToken = state.member.memberState?.refreshToken;
   }
   if (localAccessToken) {
     config.headers.Authorization = `Bearer ${localAccessToken}`;
   }
   //////////TODO 5. cookie로 유지하므로 삭제하기
-  if (localRefreshToken) {
-    config.headers["Refresh-Token"] = localRefreshToken;
-  }
 
   return config;
 });
@@ -52,6 +47,7 @@ api.interceptors.response.use(
         updateAccessToken(accessToken); // store 업데이트
         console.log("새로 발급 받은 token:", accessToken);
         originalRequest.headers.Authorization = `Bearer ${accessToken}`;
+        localAccessToken = accessToken;
         return api(originalRequest); // 요청 다시 보내기
       } catch (refreshError) {
         console.error("Token refresh 실패", refreshError);

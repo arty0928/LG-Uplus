@@ -10,10 +10,9 @@ export const loginMember = async (member: Member): Promise<Auth> => {
   const response = await axios.post("/member/login", { id: member.id, password: member.password });
   const accessToken = response.headers["authorization"];
   //////////TODO 6. cookie로 유지하므로 삭제하기
-  const refreshToken = response.headers["refresh-token"];
 
   //////////TODO 7. cookie로 유지하므로 삭제하기
-  return { accessToken, refreshToken, id: member.id, isLoggedIn: true };
+  return { accessToken, id: member.id, isLoggedIn: true };
 };
 
 export const refreshAccessToken = async (id: string) => {
